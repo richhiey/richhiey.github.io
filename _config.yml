@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "show_exerpts:"
   Google search results) and in your feed.xml site description.
 show_excerpts: true # set to true to show excerpts on the homepage
 
-remote_theme: thelehhman/texture
+remote_theme: richhiey1996/texture
 
 
 # Minima date format
@@ -18,17 +18,17 @@ sass:
 permalink: /posts/:title/
 texture:
   title: Richhiey Thomas
-  tagline: Developer
+  tagline: Creative Software Developer
   date_format: "%b %-d, %Y"
   style: black
   showNav: true
-  showPicker: true
+  showPicker: false
 
   # generate social links in footer
   social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
+    twitter: richhiey
+    github:  richhiey1996
+    linkedIn: in/richhiey
     rss: rss
  
 
