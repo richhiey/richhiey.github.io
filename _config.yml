@@ -21,12 +21,12 @@ texture:
   tagline: Creative Software Developer and AI Enthusiast
   date_format: "%b %-d, %Y"
   style: blue
-  showNav: true
+  showNav: false
   showPicker: false	
 
   # generate social links in footer
   social_links:
-    facebook: richhiey
+    facebook: richhiey.thomas
     github:  richhiey1996
     linkedIn: in/richhiey
     rss: rss
