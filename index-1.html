@@ -1,0 +1,81 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="texture">texture</h1>
+<p>A configurable jekyll theme for simply beautiful blogs.</p>
+<p><strong>Demo</strong>: <a href="https://thelehhman.com/texture">thelehhman.com/texture</a></p>
+<p><img alt="texture theme preview" src="/screen1.png" /></p>
+<h2 id="installation-on-github-pages">Installation on Github Pages</h2>
+<p>Add this line to your site's <code>_config.yml</code>:
+<code>yaml
+remote_theme: thelehhman/texture</code></p>
+<p><strong>NOTE: If you are forking this repo, remove <code>base_url: /texture</code> in the <code>_config.yml</code> which is required to load the required website assets</strong></p>
+<h2 id="installation">Installation</h2>
+<p>Add this line to your Jekyll site's <code>Gemfile</code>:</p>
+<p><code>ruby
+gem "texture"</code></p>
+<p>And add this line to your Jekyll site's <code>_config.yml</code>:</p>
+<p><code>yaml
+theme: texture</code></p>
+<p>And then execute:</p>
+<pre><code>$ bundle
+</code></pre>
+<p>Or install it yourself as:</p>
+<pre><code>$ gem install texture
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>The "texture" key in _config.yml is used to customize the theme data.
+```yaml
+texture:
+  title: Adam Denisov
+  tagline: Developer. Designer
+  date_format: "%b %-d, %Y"</p>
+<p>social_links:
+    twitter: thelehhman
+    github:  thelehhman
+    linkedIn: in/thelehhman # format: locale/username
+```</p>
+<p><strong>Styling</strong></p>
+<p>Multiple header styles are supported using the "style" property under texture in <code>_config.yml</code>.</p>
+<p><code>yaml
+texture:
+  style: [yellow|red|black|blue|green|purple]</code></p>
+<p>For example, the blue style looks like this:</p>
+<p><img alt="texture theme blue" src="/screen2.png" /></p>
+<p><strong>Texture Picker</strong></p>
+<p>You can toggle the texture picker to show/experiment various textures on your site using the showPicker variable. Remember to make it <code>false</code> for production.</p>
+<p><code>yaml
+texture:
+  showPicker: [false|true] # show the texture selector(development purposes)</code></p>
+<p><strong>Comments (Disqus)</strong></p>
+<p>Comments on posts can be enabled by specifying your disqus_shortname under texture in <code>_config.yml</code>. For example,
+<code>yaml
+texture:
+  disqus_shortname: games</code></p>
+<p><strong>Google Analytics</strong></p>
+<p>It can be enabled by specifying your analytics id under texture in <code>_config.yml</code>
+<code>yaml
+texture:
+  analytics_id: '&lt; YOUR ID &gt;'</code></p>
+<p><strong>Excerpts</strong></p>
+<p>Excerpts can be enabled by adding the following line to your <code>_config.yml</code>
+<code>yaml
+show_excerpts: true</code></p>
+<p><strong>Toggle Navbar</strong></p>
+<p><code>yaml
+texture:
+  showNav: true</code></p>
+<p><strong>Layouts</strong></p>
+<ul>
+<li>Home</li>
+<li>Page</li>
+<li>Post</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>Bug reports and pull requests are welcome on GitHub at https://github.com/thelehhman/texture. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the <a href="http://contributor-covenant.org">Contributor Covenant</a> code of conduct.</p>
+<h2 id="development">Development</h2>
+<p>To set up your environment to develop this theme, run <code>bundle install</code>.</p>
+<p>Your theme is setup just like a normal Jekyll site! To test your theme, run <code>bundle exec jekyll serve</code> and open your browser at <code>http://localhost:4000</code>. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.</p>
+<p>When your theme is released, only the files in <code>_layouts</code>, <code>_includes</code>, <code>_sass</code> and <code>assets</code> tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in <code>texture.gemspec</code> accordingly.</p>
+<h2 id="license">License</h2>
+<p>The theme is available as open source under the terms of the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+</body></html>
