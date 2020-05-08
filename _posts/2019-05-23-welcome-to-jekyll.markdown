@@ -1,7 +1,9 @@
 ---
 layout: post
-title:  "Hello, Jekyll"
-date:   2019-05-23 21:03:36 +0530
+title:  "Experiments on writing music with AI"
+description: Looking back at my journey participating in the AI Song Contest
+date:   2020-05-09 21:03:36 +0530
+categories: Generative-Models Music AI-Song-Contest
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 
