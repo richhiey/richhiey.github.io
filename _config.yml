@@ -1,4 +1,4 @@
-title: Texture Theme
+title: Richhiey's Home
 author: GitHub User
 email: your-email@domain.com
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -22,7 +22,7 @@ texture:
   date_format: "%b %-d, %Y"
   style: black
   showNav: true
-  showPicker: false
+  showPicker: false	
 
   # generate social links in footer
   social_links:
