@@ -6,7 +6,7 @@ date:   2020-05-09 21:03:36 +0530
 categories: Generative-Models Music AI-Song-Contest
 ---
 
-![texture theme preview](https://drive.google.com/file/d/1mAUWXcUF0OT1FIH3byHIb2PZJw_tlP-M/view?usp=sharing)
+![texture theme preview](https://photos.app.goo.gl/NspksV41Z3ZbpXnF9)
 
 For me, this journey started with 
 
