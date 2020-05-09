@@ -6,9 +6,11 @@ date:   2020-05-09 21:03:36 +0530
 categories: Generative-Models Music AI-Song-Contest
 ---
 
-AI Song Contest Entry - [contest][contest], [YouTube][song-link]
-Try the [Music Maker App][demo-app]
-Github [repository][github-repo]
+*AI Song Contest Entry - [Contest Page][contest], [YouTube][song-link]*
+
+*Try the [Music Maker App][demo-app]*
+
+*Github [repository][github-repo]*
 
 Both Music and AI have been a part of my life for a long time.
 
