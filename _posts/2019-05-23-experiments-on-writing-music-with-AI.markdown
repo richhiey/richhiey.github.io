@@ -6,9 +6,9 @@ date:   2020-05-09 21:03:36 +0530
 categories: Generative-Models Music AI-Song-Contest
 ---
 
-AI Song Contest Entry - [contest][https://www.vprobroadcast.com/titles/ai-songcontest/teams/germany-2.html], [YouTube][song-link]
-Try the [Music Maker App][demo-link]
-Github [repository][demo-link]
+AI Song Contest Entry - [contest][contest], [YouTube][song-link]
+Try the [Music Maker App][demo-app]
+Github [repository][github-repo]
 
 Both Music and AI have been a part of my life for a long time.
 
@@ -29,3 +29,4 @@ While I had been planning to experiment with generative models for music, I had 
 [github-repo]: https://github.com/richhiey1996/music-maker
 [demo-app]:   https://ai-music-maker.herokuapp.com
 [song-link]: https://www.youtube.com/watch?v=BNRd4eo-ePk
+[contest]: https://www.vprobroadcast.com/titles/ai-songcontest/teams/germany-2.html
