@@ -6,9 +6,13 @@ date:   2020-05-09 21:03:36 +0530
 categories: Generative-Models Music AI-Song-Contest
 ---
 
+AI Song Contest Entry - [contest][https://www.vprobroadcast.com/titles/ai-songcontest/teams/germany-2.html], [YouTube][song-link]
+Try the [Music Maker App][demo-link]
+Github [repository][demo-link]
+
 Both Music and AI have been a part of my life for a long time.
 
-My mother encouraged me to learn music as a kid and coming from a Christian family, I loved singing with my church choir. I even learnt to play the guitar and the piano while in college, just because it was cool! Even after moving out, I found a few Indian friends who love playing the tunes we used to listen to back at home. So we enjoy performing for our friends here. But all in all, music always made me feel a sense of social harmony with the people around me. It is always a good feeling.
+My mother encouraged me to learn music as a kid and coming from a Christian family, I loved singing with my church choir. I even learnt to play the guitar and the piano while in college, just because it was cool. Even after moving out, I found a few Indian friends who love playing the tunes we used to listen to back at home. So we enjoy performing for our friends here. But all in all, music always made me feel a sense of social harmony with the people around me. It is always a good feeling.
 
 Artificial Intelligence on the other hand is a field I have been pursuing since a few years now. It started out by implementing a simple K-Means algorithm for Xapian, until now, where I am starting to make sense of the immense progress that really smart people in computer science are making around the world. My most recent fascinations are the fields of Deep Learning and Reinforcement Learning, specifically with scenarios where we teach AI models how to generate data. In my context, I'm interested in generative models for musical applications. :D
 
@@ -16,8 +20,8 @@ While I had been planning to experiment with generative models for music, I had 
 
 
 - What is music?
-- What can AI do in music?
 - Why AI in music?
+- What can AI do in music?
 - How do I interact with this AI?
 - Can I play with a band of AI musicians?
 
