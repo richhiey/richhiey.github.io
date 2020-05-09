@@ -22,10 +22,14 @@ While I had been planning to experiment with generative models for music, I had 
 
 
 - What is music?
+- What does music mean to me?
 - Why AI in music?
 - What can AI do in music?
 - How do I interact with this AI?
 - Can I play with a band of AI musicians?
+
+As I started to think about the first question, I started to wonder why music exists at all. But as I looked back at my own experiences with music, I saw that music is nourishment for the soul. I also feel that is because music has the power of metaphor, just like language, and can thus be used to tell stories. And stories make us feel emotions, all kinds of them. Hence, it is to fill in this emotional void within ourselves that we have used music, from the stone age uptill now. We can see that music of each generation represents what human civilization sounded like in that period. As we had more tools, the sounds we cherished became increasingly complex. Hence most importantly, I realized that music is basically what we sound like as humans!
+
 
 
 [github-repo]: https://github.com/richhiey1996/music-maker
