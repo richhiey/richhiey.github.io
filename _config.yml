@@ -21,7 +21,7 @@ texture:
   tagline: Creative Software Developer and AI Enthusiast
   date_format: "%b %-d, %Y"
   style: blue
-  showNav: false
+  showNav: true
   showPicker: false	
 
   # generate social links in footer
