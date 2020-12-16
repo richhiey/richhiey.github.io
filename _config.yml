@@ -1,8 +1,8 @@
-title: Richhiey's Home
+title: Richhiey Thomas Home | My little space on the internet
 author: GitHub User
 email: richhiey1996@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  My little space on the internet
+  Richhiey Thomas blog | My little space on the internet
 show_excerpts: true # set to true to show excerpts on the homepage
 
 remote_theme: richhiey1996/texture
@@ -16,15 +16,15 @@ sass:
 permalink: /posts/:title/
 texture:
   title: Richhiey Thomas
-  tagline: Creative Software Developer and AI Enthusiast
+  tagline: Software Engineer playing Music with AI
   date_format: "%b %-d, %Y"
-  style: blue
+  style: black
   showNav: true
-  showPicker: false	
+  showPicker: false
 
   # generate social links in footer
   social_links:
-    facebook: richhiey.thomas
+    twitter: richhiey
     github:  richhiey1996
     linkedIn: in/richhiey
     rss: rss
