@@ -1,5 +1,5 @@
 title: Richhiey Thomas Home | My little space on the internet
-author: GitHub User
+author: Richhiey Thomas
 email: richhiey1996@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
   Richhiey Thomas blog | My little space on the internet
@@ -12,6 +12,8 @@ remote_theme: richhiey1996/texture
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
   sass_dir: _sass
+
+permalink: /posts/
 
 permalink: /posts/:title/
 texture:
