@@ -13,9 +13,8 @@ remote_theme: richhiey1996/texture
 sass:
   sass_dir: _sass
 
-permalink: /posts/
-
 permalink: /posts/:title/
+
 texture:
   title: Richhiey Thomas
   tagline: Software Engineer playing Music with AI
