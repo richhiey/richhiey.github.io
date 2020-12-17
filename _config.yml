@@ -17,7 +17,7 @@ permalink: /posts/:title/
 
 texture:
   title: Richhiey Thomas
-  tagline: Software Engineer playing Music with AI
+  tagline: Software Engineer interested in AI and Music
   date_format: "%b %-d, %Y"
   style: black
   showNav: true
