@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Participating in the AI Music Generation Challenge"
-description: Generating 10000 Irish Double Jigs with Deep Learning
+title:  "Generating 10000 Irish Double Jigs"
+description: Participating in the AI Music Generation Challenge 2020
 date:   2020-10-30 21:03:36 +0530
 categories: Folk-Music Automatic-Music-Generation RNN Transformer
 ---
