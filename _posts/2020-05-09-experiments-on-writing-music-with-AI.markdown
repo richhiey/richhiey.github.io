@@ -6,11 +6,21 @@ date:   2020-05-09 21:03:36 +0530
 categories: Generative-Models Music AI-Song-Contest
 ---
 
-*AI Song Contest Entry - [Contest Page][contest], [YouTube][song-link].*
+*AI Song Contest Entry - [Contest Page][contest], [Traveller in Time][song-link]*
 
-*Try the [Music Maker App][demo-app].*
+- Team name - OVGNeUrovision
 
-*Github [repository][github-repo].*
+- *[Music Maker App][demo-app]*
+
+- *Github [repository][github-repo]*
+
+- *Live Stream [Link][live-stream-link]*
+
+- *Official [Results][official-results]*
+
+- *[Blog][magenta-post] about learnings from AI Song Contest by Magenta Team*
+
+- *AI Song Contest [wikipedia][contest-wiki]*
 
 Both Music and AI have been a part of my life for a long time.
 
@@ -50,3 +60,7 @@ Creating a song has been a deeply enriching experience for me, since it taught m
 [demo-app]:   https://ai-music-maker.herokuapp.com
 [song-link]: https://www.youtube.com/watch?v=BNRd4eo-ePk
 [contest]: https://www.vprobroadcast.com/titles/ai-songcontest/teams/germany-2.html
+[live-stream-link]: https://www.youtube.com/watch?v=-yIu5VLZj5g
+[official-results]: https://github.com/AI-Song-Contest/ai-song-contest-data
+[magenta-post]: https://magenta.tensorflow.org/aisongcontest
+[contest-wiki]: https://en.wikipedia.org/wiki/AI_Song_Contest
