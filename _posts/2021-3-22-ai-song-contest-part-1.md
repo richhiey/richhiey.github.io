@@ -11,10 +11,10 @@ AI Song Contest time is back again in 2021!
 Last year was a great learning experience. I got to make music hands-on for the first time in different settings using deep learning algorithms, attended conferences and read more research papers and wrote more code. I also learnt about the art of music a little bit more. I was introduced to the creative process of making art and augmenting it using technology to create something unique. From around the end of the past year until today, I have been learning about various research directions in music-AI and understanding the stacks of technology on which AI algorithms would have to work in order to support people in playing or creating music. This stack looks something like - 
 
 - Music Theory (Notation, Scale, Key, Meter, Rhythm, Chords, Playing)
-- Musical Instruments
+- Musical Instruments (Piano, Guitar)
 - ------------------------------
-- Music hardware (MIDI controllers, mics, Guitars)
-- Digital Signal Processing (Mixers, connecting wires and math)
+- Music hardware (MIDI controller, mic)
+- Digital Signal Processing (Mixer, connecting wires and math)
 - Digital Audio Workstations (LMMS, Bitwig-8track, Ableton Live)
 - Virtual Studio Technology
 - Max device programming and M4L devices 
@@ -45,7 +45,7 @@ So the plan is to collect and organize data to train our tools and create music 
 
 Data
 --------
-- So how do we use data to shape our tools using data?
+- So how do we use data to shape the functionality of our tools?
 - Storytelling with data?
 
 Deep Learning
