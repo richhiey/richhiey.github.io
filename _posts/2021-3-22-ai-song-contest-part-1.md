@@ -6,7 +6,9 @@ date:   2021-03-21 21:03:36 +0530
 categories: Generative-Models Music AI-Song-Contest
 ---
 
-AI Song Contest time is back again in 2021! Last year was a great learning experience. I got to make music hands-on for the first time in different settings using deep learning algorithms, attended conferences and read more research papers and wrote more code. I also learnt about the art of music a little bit more. I was introduced to the creative process of making art and augmenting it using technology to create something unique. From around the end of the past year until today, I have been learning about various research directions in music-AI and understanding the stacks of technology on which AI algorithms would have to work in order to support people in playing or creating music. This stack looks something like - 
+AI Song Contest time is back again in 2021! 
+
+Last year was a great learning experience. I got to make music hands-on for the first time in different settings using deep learning algorithms, attended conferences and read more research papers and wrote more code. I also learnt about the art of music a little bit more. I was introduced to the creative process of making art and augmenting it using technology to create something unique. From around the end of the past year until today, I have been learning about various research directions in music-AI and understanding the stacks of technology on which AI algorithms would have to work in order to support people in playing or creating music. This stack looks something like - 
 
 - Music Theory (Notation, Scale, Key, Meter, Rhythm, Chords, Playing)
 - Musical Instruments
