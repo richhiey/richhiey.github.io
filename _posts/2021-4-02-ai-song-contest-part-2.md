@@ -21,17 +21,20 @@ Once the data formats have been decided, it is also important to ask what kinds 
 The characteristics of the data we collect will be centered around the tasks that we are training our AI models on. We have two types of AI models partially setup - Audio models and MIDI models. Audio models are a set of DL models which learn on audio data. MIDI models are a set of DL models that learn on MIDI data. 
 
 Audio models consists of:
-- **NSynth WaveNet autoencoder** (Pretrained)
+- [**NSynth WaveNet autoencoder**][nsynth] (Pretrained)
 	- NSynth can give us temporal embeddings of audio clips. These embeddings can then be used to resynthesize sound using a WaveNet decoder. The only drawback is that it is super slow. But it allows for interesting manipulations in the embedding space, and for a way to map these changes back to sound. Pretty cool! I see this as a tool to explore known spaces of sound.
-- **SampleRNN**
+
+- [**SampleRNN**][samplernn-github]
 	- Unconditional audio synthesis is the goal here. Feed in datasets of audio, and see what sampleRNN does with it! I see it as a way of exploring unknown spaces of sound.
-- **DDSP**
+}
+- [**DDSP**][ddsp]
 	- This is something I just wanted to try out. The goal is to test DDSP on different kinds of vocal tasks. We will be testing out various variants of DDSP. First, we want to test unconditional generation of singing given f0 and amplitude features. Second, we want to learn a latent space of vocal techniques by using a VQ-VAE within the DDSP architecture. Slightly ambitious given the timeframe, but lets see how it goes!
 
 MIDI models consists of:
-- **MusicRNN models**
+- [**MusicRNN models**][music_rnn]
 	- Collection of LSTM-based language models with different input representations which learn over MIDI datasets 
-- **MusicVAE models**
+
+- [**MusicVAE models**][music_vae]
 	- Collection of Recurrent-VAE models which learn a latent space of single MIDI tracks or MIDI multitracks.
 
 Finally, we want to know what types of musical data are important to us. Looking at the tasks above, we will be needing a few different types of datasets:
@@ -43,3 +46,9 @@ Finally, we want to know what types of musical data are important to us. Looking
 Each of the collections of data can have qualities slightly different from the others, hence allowing the AI model to learn something different. It is also important to have datasets that contain data which represent edge cases, to see where the model breaks and whether that is of any interest.
 
 So thats a brief description about our decisions on what musical data is important in our musical process for the contest.
+
+[samplernn-github]: https://github.com/rncm-prism/prism-samplernn
+[nsynth]: https://magenta.tensorflow.org/nsynth
+[ddsp]: https://github.com/magenta/ddsp
+[music_rnn]: https://magenta.github.io/magenta-js/music/classes/_music_rnn_model_.musicrnn.html
+[music_vae]: https://magenta.github.io/magenta-js/music/classes/_music_vae_model_.musicvae.html
