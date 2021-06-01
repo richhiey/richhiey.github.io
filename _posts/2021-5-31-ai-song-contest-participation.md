@@ -124,7 +124,7 @@ Acknowledgments
 Many thanks to the [AILab at OVGU][ailab] for helping us out with equipment, providing a workspace and guiding us in this space of AI and music. Also, thank you to family and friends for listening to various stages of our music making process and providing feedback!
 
 [final-song-soundcloud-annotated]: https://soundcloud.com/song-contest-889411407/beatwire-love-will-guide-it
-[final-song-soundcloud]: https://soundcloud.com/song-contest-889411407/beatwire-love-will-guide-it
+[final-song-soundcloud]: https://soundcloud.com/song-contest-889411407/love-will-guide-it
 [behind-the-sound-soundcloud]: https://soundcloud.com/song-contest-889411407/sets/behind-the-sound-ai-song/s-CnOYmLcd2NH
 [gpt2-link]: https://huggingface.co/transformers/model_doc/gpt2.html
 [part_1]:https://richhiey1996.github.io/posts/ai-song-contest-part-1/
