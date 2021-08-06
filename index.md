@@ -2,8 +2,11 @@
 layout: home_page
 ---
 
-I am a Software Engineer with a formal background in Machine Learning and informal interests in Music and the Cognitive Sciences. Currently, I am pursuing a Masters degree in [Data and Knowledge Engineering]() at [Otto-von-Guericke-Universität, Magdeburg](), Germany. I have also been working here at the [AI-Lab]() as a Research Assistant.
+I am a software engineer pursuing a Masters degree in Data and Knowledge Engineering (DKE) at [Otto-von-Guericke-Universität, Magdeburg][ovgu], Germany. Currently, I am working on my masters thesis in the area of transfer learning from automatic speech recognition to improve speech emotion recognition. I was working at the [OVGU AILab][ailab] as a Student Research Assistant on creative research challenges focused at music generation, either [automatically][automatic] or through [human interactions][beatwire]. Working at the lab along with the master in DKE course introduced me to the principles and practices of running machine learning experiments and doing scientific work.
 
-I am passionate about using AI algorithms to build intelligent systems that can lend themselves as creative tools for musical expression. More specifically, I enjoy applying deep learning techniques to build systems capable of generating music either automatically or through musical interactions of some kind. In 2020, I participated in the [AI Song Contest]() and the [AI Music Generation Challenge]() and learnt quite a bit about the kinds of challenges within the fields of Music Information Retrieval and Automatic Music Generation. Going forward, I plan to continue building such experiments and working on my Masters thesis.
+Before moving to Germany, I was working as a Software developer at Mirraw, a Mumbai based fashion e-commerce startup. Here I learnt how to collaborate in a small and focused team of developers building a product. Also got to do full-stack web development in Ruby-on-rails and gained knowledge about e-commerce solutions. During my bachelor studies in computer science, I was introduced to software development through Google Summer of Code 2016, in which I contributed to Xapian, an open source search engine library. 
 
-Before moving to Germany, I was working as a Software developer at Mirraw, a Mumbai based E-commerce startup. I have completed my Bachelors in Computer Engineering under the University of Mumbai, India.
+[ovgu]: https://www.ovgu.de/
+[ailab]: https://ai.ovgu.de/
+[automatic]: https://richhiey.github.io/posts/generating-irish-double-jigs-with-deep-learning/
+[beatwire]: https://www.aisongcontest.com/participants/beatwire-2021
