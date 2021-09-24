@@ -25,7 +25,6 @@ texture:
 
   # generate social links in footer
   social_links:
-    twitter: richhiey
     github:  richhiey
     linkedIn: in/richhiey
     rss: rss
