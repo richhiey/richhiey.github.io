@@ -1,112 +1,30 @@
 ---
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "theme";
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
 
- {%- if site.texture.showPicker -%}
-#texture-picker {
-    position: fixed;
-    {%- if site.texture.showNav -%}
-        top: 100px;
-        right: 5vw;
-    {%- else -%}
-        top: 20px;
-        right: 20px;
-    {%- endif -%}
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 8px 12px;
-    p {
-        margin: 0;
-        @include fluidType(14px, 15px);
-    }
-    .info {
-        background-color: rgba(#ffd68d, 0.7);
-        border-radius: 4px;
-        font-size: 13px;
-        // color: #999;
-        padding: 10px;
-        margin-top: 10px;
-        max-width: 200px;
-        line-height: 1.3em;
-    }
-    .texture-colors {
-        display: flex;
-        > div {
-            width: 30px;
-            height: 30px;
-            margin: 4px;
-            border: 1px solid #eee;
-            border-radius: 4px;
-            &:hover {
-                cursor: pointer;
-            }
-        }
-    }
-    #red {background-color: orangered;}
-    #blue { background-color: lightblue; }
-    #black { background-color: #111; }
-    #purple { background-color: rebeccapurple; }
-    #green { background-color: mediumseagreen; }
-}
-{%- endif -%}
-// Textures
-.texture-black {
-    background-image: url('{{ site.baseurl }}/assets/textures/black.jpg');
-
-    h2 {
-        color: #999;
-    }
+.profile_pitcture {
+  height: 12em;
+  width: 12em;
+  border-radius: 6em;
 }
 
-.texture-blue {
-    background-image: url('{{ site.baseurl }}/assets/textures/blue.jpg');
-
-    h2 {
-        color: #ddd;
-    }
-
-    .social i:hover {
-        color: #eee;
-    }
-
-    .post-date {
-        color: #ccc;
-    }
+.trigger {
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.texture-red {
-    background-image: url('{{ site.baseurl }}/assets/textures/red.jpg');
+.site-nav input ~ .trigger {
+  padding: 0em 1em 1em 0em
 }
 
-.texture-purple {
-    background-image: url('{{ site.baseurl }}/assets/textures/purple.jpg');
+.site-nav {
+  display: inline-flex;
 }
 
-.texture-green {
-    background-image: url('{{ site.baseurl }}/assets/textures/green.jpg');
-
-    .post-date {
-        color: #ccc;
-    }
-}
-
-.texture-red,
-.texture-purple {
-    h2 {
-        color: #ccc;
-    }
-
-    .social i {
-        color: #ddd;
-
-        &:hover {
-            color: lighten(#ddd, 7%);
-        }
-    }
-
-    .post-date {
-        color: #ddd;
-    }
+.page-link {
+  padding: 10px;
 }
