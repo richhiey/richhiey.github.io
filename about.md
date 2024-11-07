@@ -4,12 +4,27 @@ title: About Me
 permalink: /
 ---
 
-I am a software engineer pursuing a Masters degree in Data and Knowledge Engineering (DKE) at [Otto-von-Guericke-Universität, Magdeburg][ovgu], Germany. Currently, I am exploring a master thesis in Data Science and Music Information Retrieval at [Skoove][skoove]. Previously, I was working at the [OVGU AILab][ailab] as a Student Research Assistant on creative research challenges focused at music generation, either [automatically][automatic] or through [human interactions][beatwire]. Working at the lab along with the master in DKE course introduced me to the principles and practices of running machine learning experiments and doing scientific work.
+<img src="/assets/images/home/home_image.jpg" alt="Richhiey Thomas" width="100" height="100" style="border-radius:50px">
 
-Before moving to Germany, I was working as a Software developer at Mirraw, a Mumbai based fashion e-commerce startup. Here I learnt how to collaborate in a small and focused team of developers building a product. Also got to do full-stack web development in Ruby-on-rails and gained knowledge about e-commerce solutions. During my bachelor studies in computer science, I was introduced to software development through Google Summer of Code 2016, in which I contributed to Xapian, an open source search engine library. 
+Hi! Richhiey here, from Mumbai.
+
+I'm a software engineer with 4+ years of experience in AI and Machine learning and a background in Computer Science. Currently, I work as a Data Scientist at [PhonicScore][phonicscore] on building data and model training pipelines for automatic music transcription. Prior to this I was involved with the data science team at [Skoove][skoove] as a data engineer.
+
+More recently, I have been exploring the Generative AI space by hacking together an AI application using [LangChain][langchain], [HuggingFace Hub][hf-hub], [Supabase][supabase], [Vercel AI SDK][vercel-ai-sdk] and [Next.JS][nextjs].
+
+The hosted application can be found here - [https://genui-chatbot-drab.vercel.app/](https://genui-chatbot-drab.vercel.app/) 
+
+I have completed a Master's degree in Data and Knowledge Engineering at [Otto-von-Guericke-Universität Magdeburg][ovgu] (Jun 2022), where I was exploring compression of transformer models for piano transcription through [my master's thesis]() under the [OVGU AILab][ailab]. My journey with software began durng Google Summer of Code 2016, where I contributed to the open-source Xapian search engine livrary.
+
 
 [ovgu]: https://www.ovgu.de/
 [ailab]: https://ai.ovgu.de/
 [automatic]: https://richhiey.github.io/posts/generating-irish-double-jigs-with-deep-learning/
 [beatwire]: https://www.aisongcontest.com/participants/beatwire-2021
 [skoove]: https://www.skoove.com/en
+[phonicscore]: https://www.phonicscore.com
+[langchain]: https://python.langchain.com/docs/introduction/
+[hf-hub]: https://huggingface.co/docs/hub/en/index
+[supabase]: https://supabase.com/
+[vercel-ai-sdk]: https://sdk.vercel.ai/docs/introduction
+[nextjs]: https://nextjs.org/docs
