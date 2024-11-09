@@ -3,7 +3,6 @@ layout: post
 title:  "AI Song Contest 2021 Diaries - Part 2"
 description: "Assembling musical data for learning musical tasks"
 date:   2021-04-02 21:03:36 +0530
-categories: Generative-Models Music AI-Song-Contest
 ---
 
 Reflections on certain directions we are taking for the song contest this year.
