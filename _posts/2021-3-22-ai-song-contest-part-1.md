@@ -3,7 +3,6 @@ layout: post
 title:  "AI Song Contest 2021 Diaries - Part 1"
 description: "Gearing up for music making with AI"
 date:   2021-03-21 21:03:36 +0530
-categories: Generative-Models Music AI-Song-Contest
 ---
 
 AI Song Contest time is back again in 2021! 

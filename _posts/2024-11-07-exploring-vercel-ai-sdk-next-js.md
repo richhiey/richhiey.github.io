@@ -3,6 +3,7 @@ layout: post
 title:  "Exploring Vercel AI SDK and next.JS"
 description: "Exploration of the capabilities of the Vercel AI SDK-Core and SDK-UI"
 date:   2024-11-04 21:03:36 +0530
+tags: Vercel Typescript vercel-ai-sdk
 ---
 
 2024 has been the year of LLM's and other AI models with powerful generative capabilities across the domains of language, image, video and audio. While foundation models provide the essential building block for creating intelligent features in our applications, building AI-native user experiences on our devices requires a new way of thinking about how we integrate these AI models into our everyday software applications. [Vercel][vercel], the creators of [Next.JS][nextjs] are one such player in this market, easing up the deployment process for the next generation of applications creating native AI experiences on the web.
