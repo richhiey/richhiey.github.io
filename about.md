@@ -6,16 +6,13 @@ permalink: /
 
 <img src="/assets/images/home/home_image.jpg" alt="Richhiey Thomas" width="100" height="100" style="border-radius:50px">
 
-Hi! Richhiey here, from Mumbai, India.
+Hey there! Richhiey here.
 
-I'm a software engineer with 4+ years of experience in AI and Machine learning and a background in Computer Science. Currently I work as a Data Scientist at [PhonicScore][phonicscore], building data and model training pipelines for automatic music transcription. Prior to this I was involved with the data science team at [Skoove][skoove] as a data engineer.
+I design and deliver end-to-end machine learning systems, specializing in audio ML — automatic music transcription, event detection, and ASR. My approach spans building robust data pipelines, optimizing real-time audio models, and deploying production-grade solutions on the cloud. I leverage Python, TypeScript, and C++, alongside ML frameworks and audio software to transform complex data into actionable results.
 
-<!-- More recently, I have been exploring the Generative AI space by hacking together an AI application using [LangChain][langchain], [HuggingFace Hub][hf-hub], [Supabase][supabase], [Vercel AI SDK][vercel-ai-sdk] and [Next.JS][nextjs]. -->
+My cloud skillset includes AWS (SageMaker, Glue, S3, ECS), Docker-based containerization, and rapid API development with FastAPI and Flask. For scalable, reliable data workflows, I use PySpark for distributed processing and Airflow for orchestration, ensuring maintainable and efficient ML pipelines that consistently meet business requirements.
 
-<!-- The hosted application can be found here - [https://genui-chatbot-drab.vercel.app/](https://genui-chatbot-drab.vercel.app/)  -->
-
-I have completed a Master's degree in Data and Knowledge Engineering at [Otto-von-Guericke-Universität Magdeburg][ovgu] (Jun 2022), where I was exploring compression of transformer models for piano transcription through [my master's thesis][masters-thesis-pdf] under the [OVGU AILab][ailab] and [Skoove][skoove]. My journey with software began durng [Google Summer of Code 2016][gsoc2016], where I contributed to the open-source Xapian search engine library.
-
+If you’re interested in ML for audio, robust data engineering, or simply want to discuss how to build production AI from the ground up — let’s connect. This site showcases a sample of my projects, thoughts, and learnings. Thanks for visiting!
 
 [ovgu]: https://www.ovgu.de/
 [ailab]: https://ai.ovgu.de/
