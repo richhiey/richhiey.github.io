@@ -71,15 +71,44 @@ This process kept each change reviewable and made the project history easier to 
 
 ## Integrating Codex with OpenClaw using OpenAI web URL login
 
-I also wanted Codex to work inside my OpenClaw setup.
+I also wanted Codex to work inside my OpenClaw setup. Here is the practical setup I now follow.
 
-High-level flow:
+### In the OpenClaw UI
 
-1. Open OpenClaw settings and choose OpenAI-compatible provider mode.
-2. Use the **OpenAI web URL login** path to authenticate.
-3. Point OpenClaw to the correct OpenAI-compatible base URL.
-4. Verify model listing and run a test prompt from OpenClaw.
-5. Confirm Codex agent tasks can be triggered against your project workspace.
+1. Open provider settings and select **OpenAI-compatible** mode.
+2. Use the **OpenAI web URL login** option if OpenClaw exposes a browser-based login flow.
+3. Set your API base URL to the OpenAI-compatible endpoint (for example: `https://api.openai.com/v1` for OpenAI, or your self-hosted gateway URL).
+4. Save, reload model list, and pick the model you want for agent tasks.
+
+### Verify from terminal first (recommended)
+
+Before running agent automations in OpenClaw, verify auth and endpoint behavior from terminal:
+
+```bash
+export OPENAI_API_KEY="<your_api_key>"
+export OPENAI_BASE_URL="https://api.openai.com/v1"   # or your OpenAI-compatible URL
+
+curl -s "$OPENAI_BASE_URL/models"   -H "Authorization: Bearer $OPENAI_API_KEY"   -H "Content-Type: application/json" | jq '.data[0:5]'
+```
+
+Then test a minimal chat request:
+
+```bash
+curl -s "$OPENAI_BASE_URL/chat/completions"   -H "Authorization: Bearer $OPENAI_API_KEY"   -H "Content-Type: application/json"   -d '{
+    "model": "gpt-4o-mini",
+    "messages": [{"role": "user", "content": "Reply with: OpenClaw connectivity OK"}],
+    "temperature": 0
+  }' | jq '.choices[0].message.content'
+```
+
+If both calls work, OpenClaw usually works as long as its provider URL/model name match exactly.
+
+### Common failure checks
+
+- 401/403 -> bad API key, missing org/project scope, or wrong auth header.
+- 404 -> wrong base URL path (missing `/v1` is common).
+- model-not-found -> model name mismatch between terminal test and OpenClaw config.
+- timeout -> proxy/firewall/VPN issue; test with `curl -v` to inspect connection behavior.
 
 Practical tip: keep a small "hello task" (for example, edit a markdown file) to validate auth, permissions, and repository write access before running bigger automations.
 
