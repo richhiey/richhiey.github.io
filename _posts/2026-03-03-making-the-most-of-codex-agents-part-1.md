@@ -71,54 +71,52 @@ This process kept each change reviewable and made the project history easier to 
 
 ## Integrating Codex with OpenClaw using OpenAI web URL login
 
-I also wanted Codex to work inside my OpenClaw setup. Here is the practical setup I now follow.
+The correct setup I use here is based on **OpenClaw docs -> Providers -> OpenAI -> Option B: OpenAI Code (Codex Subscription)**:
 
-### In the OpenClaw UI (refined from OpenClaw provider docs)
+- https://docs.openclaw.ai/providers/openai#option-b-openai-code-codex-subscription
 
-I now keep this section focused on **OpenClaw-side setup** (not raw OpenAI API testing).
+### What Option B means
 
-1. Open **Providers -> OpenAI** in OpenClaw.
-2. Enable the **OpenAI web URL login** flow.
-3. Paste the web URL exactly as shown in the OpenClaw docs page for your deployment.
-4. Save provider settings and pick the Codex-capable model in OpenClaw.
-5. Run a small agent task from OpenClaw to confirm repo access.
+Option B is the path for people using a **Codex subscription login flow** (web login), instead of directly wiring a standard API-key-only provider flow.
 
-### Terminal steps I use around that UI flow
+### Exact OpenClaw flow for Option B
 
-Use terminal for repeatable local operations around OpenClaw:
+1. Open OpenClaw and go to **Providers -> OpenAI**.
+2. Select **Option B: OpenAI Code (Codex Subscription)**.
+3. Click the **web login** action in OpenClaw for this option.
+4. Complete browser auth and return to OpenClaw.
+5. Choose the Codex-capable model exposed by that login path.
+6. Save and run a tiny task (for example: "edit one markdown line") to verify it can read/write your workspace.
+
+### Terminal commands around Option B (ops + validation)
+
+These commands are for operating OpenClaw while doing Option B setup:
 
 ```bash
-# 1) Start OpenClaw (from your OpenClaw project directory)
+# Start OpenClaw
+cd /path/to/openclaw
 docker compose up -d
 
-# 2) Follow logs while configuring provider settings in the UI
+# Watch logs while completing web login in UI
 docker compose logs -f openclaw
 
-# 3) Restart after provider/config changes
+# Restart after provider/login updates
 docker compose restart openclaw
 ```
 
-If your OpenClaw deployment supports `.env` config, keep these values there and restart:
+Then run one smoke task from the OpenClaw UI against your repo and monitor logs:
 
 ```bash
-cat > .env <<'EOF'
-OPENCLAW_PROVIDER=openai
-OPENCLAW_OPENAI_LOGIN_MODE=web_url
-OPENCLAW_OPENAI_WEB_URL=<use-the-url-from-openclaw-docs>
-OPENCLAW_MODEL=<codex-capable-model-name>
-EOF
-
-docker compose up -d --force-recreate
+docker compose logs -f openclaw
 ```
 
-### OpenClaw-specific troubleshooting (not OpenAI API checks)
+### Practical checks for Option B
 
-- Login loop in UI -> clear browser session/cookies for the OpenClaw host and retry web login.
-- Model does not appear -> confirm provider saved, then restart OpenClaw and refresh model list.
-- Agent can answer but cannot edit repo -> check workspace mount and repository permissions in your OpenClaw runtime.
-- Silent failures -> inspect `docker compose logs -f openclaw` during task execution.
+- If login succeeds but models are empty, re-open Providers and refresh/reselect Option B.
+- If agent replies but cannot commit/edit, check workspace mount + repo permissions in your OpenClaw runtime.
+- If session seems stale, restart OpenClaw and repeat Option B web login once.
 
-Practical tip: keep a tiny "hello task" (for example, edit one markdown line in a branch) to validate end-to-end OpenClaw -> Codex -> repo workflow before larger automations.
+This keeps the integration aligned with OpenClaw's Codex-subscription flow instead of generic OpenAI API-key wiring.
 
 ## Jekyll + GitHub Actions publishing loop
 
