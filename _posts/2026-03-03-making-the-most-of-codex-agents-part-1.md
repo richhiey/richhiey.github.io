@@ -73,12 +73,43 @@ This process kept each change reviewable and made the project history easier to 
 
 I also wanted Codex to work inside my OpenClaw setup. Here is the practical setup I now follow.
 
-### In the OpenClaw UI
+### In the OpenClaw UI (with terminal-assisted setup)
 
-1. Open provider settings and select **OpenAI-compatible** mode.
-2. Use the **OpenAI web URL login** option if OpenClaw exposes a browser-based login flow.
-3. Set your API base URL to the OpenAI-compatible endpoint (for example: `https://api.openai.com/v1` for OpenAI, or your self-hosted gateway URL).
-4. Save, reload model list, and pick the model you want for agent tasks.
+I configure values in terminal first, then paste them into OpenClaw UI fields.
+
+```bash
+# 1) Set provider endpoint + key in your shell session
+export OPENAI_BASE_URL="https://api.openai.com/v1"
+export OPENAI_API_KEY="<your_api_key>"
+export OPENAI_MODEL="gpt-4o-mini"
+
+# 2) Optional: persist them for future terminals
+cat >> ~/.bashrc <<'ENVVARS'
+export OPENAI_BASE_URL="https://api.openai.com/v1"
+export OPENAI_API_KEY="<your_api_key>"
+export OPENAI_MODEL="gpt-4o-mini"
+ENVVARS
+```
+
+Then in OpenClaw UI:
+
+1. Open provider settings and choose **OpenAI-compatible** mode.
+2. If available, click **OpenAI web URL login** and complete authentication in browser.
+3. Paste values from terminal into UI fields:
+   - Base URL: `echo "$OPENAI_BASE_URL"`
+   - API key: `echo "$OPENAI_API_KEY"`
+   - Model: `echo "$OPENAI_MODEL"`
+4. Save settings, refresh models, and select the exact model name.
+
+If your OpenClaw supports env-file loading, you can also create a project-level `.env`:
+
+```bash
+cat > .env <<'EOF'
+OPENAI_BASE_URL=https://api.openai.com/v1
+OPENAI_API_KEY=<your_api_key>
+OPENAI_MODEL=gpt-4o-mini
+EOF
+```
 
 ### Verify from terminal first (recommended)
 
