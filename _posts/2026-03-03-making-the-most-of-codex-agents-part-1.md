@@ -38,31 +38,36 @@ My onboarding was simple:
 
 The key is to treat Codex as an engineering partner, not a magic black box.
 
-## First task: transcribe music and open a pull request
+## First task: building `transcribemusic` with iterative Codex development
 
-For my first meaningful workflow, I picked something close to my domain: **transcribing a short music clip** and wiring that output into a repo workflow.
+By "transcribe music," I mean the project we built iteratively with Codex:
 
-I asked Codex to:
+- Repo: [richhiey/transcribemusic](https://github.com/richhiey/transcribemusic)
 
-1. Generate a small script to run transcription on a sample file.
-2. Save outputs in a structured folder (`data/transcriptions/...`).
-3. Add usage notes in README.
-4. Commit the change with a clear message.
-5. Create a pull request summary with what changed and why.
+The workflow was intentionally iterative:
 
-### How the pull request was created
+1. Start from a very small goal (single-file transcription path).
+2. Run the code and inspect outputs.
+3. Ask Codex for focused improvements (error handling, CLI options, output formatting, docs).
+4. Re-run and verify.
+5. Repeat until the feature felt stable.
 
-The process was straightforward and reproducible:
+That iterative loop was the real unlock. Instead of trying to get everything perfect in one prompt, we used short feedback cycles and kept momentum.
 
-- Codex staged the changed files.
-- It created a commit with a descriptive title.
-- It generated a PR title and body including:
-  - context/problem
-  - implementation details
-  - validation steps
-  - next follow-ups
+### How the pull requests were created
 
-This gave me a reviewable artifact instead of one-off local edits. The biggest win was consistency: even a small experiment ended up properly documented.
+For each iteration, we followed a repeatable PR workflow with Codex:
+
+1. Ask Codex to summarize exactly what changed.
+2. Stage only relevant files.
+3. Commit with a scoped message.
+4. Generate a PR title + body that includes:
+   - problem/context
+   - implementation details
+   - validation steps
+   - known limitations and next tasks
+
+This process kept each change reviewable and made the project history easier to understand.
 
 ## Integrating Codex with OpenClaw using OpenAI web URL login
 
@@ -77,6 +82,17 @@ High-level flow:
 5. Confirm Codex agent tasks can be triggered against your project workspace.
 
 Practical tip: keep a small "hello task" (for example, edit a markdown file) to validate auth, permissions, and repository write access before running bigger automations.
+
+## Jekyll + GitHub Actions publishing loop
+
+For this blog itself, my loop is simple:
+
+1. Draft/update post locally.
+2. Commit and push to the website repo.
+3. Let GitHub Pages deploy through Actions.
+4. Verify the live page once the workflow completes.
+
+As this series continues, I plan to automate more of this loop with Codex while keeping final human review before merge.
 
 ## Next steps in this series
 
