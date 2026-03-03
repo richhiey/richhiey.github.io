@@ -73,75 +73,52 @@ This process kept each change reviewable and made the project history easier to 
 
 I also wanted Codex to work inside my OpenClaw setup. Here is the practical setup I now follow.
 
-### In the OpenClaw UI (with terminal-assisted setup)
+### In the OpenClaw UI (refined from OpenClaw provider docs)
 
-I configure values in terminal first, then paste them into OpenClaw UI fields.
+I now keep this section focused on **OpenClaw-side setup** (not raw OpenAI API testing).
+
+1. Open **Providers -> OpenAI** in OpenClaw.
+2. Enable the **OpenAI web URL login** flow.
+3. Paste the web URL exactly as shown in the OpenClaw docs page for your deployment.
+4. Save provider settings and pick the Codex-capable model in OpenClaw.
+5. Run a small agent task from OpenClaw to confirm repo access.
+
+### Terminal steps I use around that UI flow
+
+Use terminal for repeatable local operations around OpenClaw:
 
 ```bash
-# 1) Set provider endpoint + key in your shell session
-export OPENAI_BASE_URL="https://api.openai.com/v1"
-export OPENAI_API_KEY="<your_api_key>"
-export OPENAI_MODEL="gpt-4o-mini"
+# 1) Start OpenClaw (from your OpenClaw project directory)
+docker compose up -d
 
-# 2) Optional: persist them for future terminals
-cat >> ~/.bashrc <<'ENVVARS'
-export OPENAI_BASE_URL="https://api.openai.com/v1"
-export OPENAI_API_KEY="<your_api_key>"
-export OPENAI_MODEL="gpt-4o-mini"
-ENVVARS
+# 2) Follow logs while configuring provider settings in the UI
+docker compose logs -f openclaw
+
+# 3) Restart after provider/config changes
+docker compose restart openclaw
 ```
 
-Then in OpenClaw UI:
-
-1. Open provider settings and choose **OpenAI-compatible** mode.
-2. If available, click **OpenAI web URL login** and complete authentication in browser.
-3. Paste values from terminal into UI fields:
-   - Base URL: `echo "$OPENAI_BASE_URL"`
-   - API key: `echo "$OPENAI_API_KEY"`
-   - Model: `echo "$OPENAI_MODEL"`
-4. Save settings, refresh models, and select the exact model name.
-
-If your OpenClaw supports env-file loading, you can also create a project-level `.env`:
+If your OpenClaw deployment supports `.env` config, keep these values there and restart:
 
 ```bash
 cat > .env <<'EOF'
-OPENAI_BASE_URL=https://api.openai.com/v1
-OPENAI_API_KEY=<your_api_key>
-OPENAI_MODEL=gpt-4o-mini
+OPENCLAW_PROVIDER=openai
+OPENCLAW_OPENAI_LOGIN_MODE=web_url
+OPENCLAW_OPENAI_WEB_URL=<use-the-url-from-openclaw-docs>
+OPENCLAW_MODEL=<codex-capable-model-name>
 EOF
+
+docker compose up -d --force-recreate
 ```
 
-### Verify from terminal first (recommended)
+### OpenClaw-specific troubleshooting (not OpenAI API checks)
 
-Before running agent automations in OpenClaw, verify auth and endpoint behavior from terminal:
+- Login loop in UI -> clear browser session/cookies for the OpenClaw host and retry web login.
+- Model does not appear -> confirm provider saved, then restart OpenClaw and refresh model list.
+- Agent can answer but cannot edit repo -> check workspace mount and repository permissions in your OpenClaw runtime.
+- Silent failures -> inspect `docker compose logs -f openclaw` during task execution.
 
-```bash
-export OPENAI_API_KEY="<your_api_key>"
-export OPENAI_BASE_URL="https://api.openai.com/v1"   # or your OpenAI-compatible URL
-
-curl -s "$OPENAI_BASE_URL/models"   -H "Authorization: Bearer $OPENAI_API_KEY"   -H "Content-Type: application/json" | jq '.data[0:5]'
-```
-
-Then test a minimal chat request:
-
-```bash
-curl -s "$OPENAI_BASE_URL/chat/completions"   -H "Authorization: Bearer $OPENAI_API_KEY"   -H "Content-Type: application/json"   -d '{
-    "model": "gpt-4o-mini",
-    "messages": [{"role": "user", "content": "Reply with: OpenClaw connectivity OK"}],
-    "temperature": 0
-  }' | jq '.choices[0].message.content'
-```
-
-If both calls work, OpenClaw usually works as long as its provider URL/model name match exactly.
-
-### Common failure checks
-
-- 401/403 -> bad API key, missing org/project scope, or wrong auth header.
-- 404 -> wrong base URL path (missing `/v1` is common).
-- model-not-found -> model name mismatch between terminal test and OpenClaw config.
-- timeout -> proxy/firewall/VPN issue; test with `curl -v` to inspect connection behavior.
-
-Practical tip: keep a small "hello task" (for example, edit a markdown file) to validate auth, permissions, and repository write access before running bigger automations.
+Practical tip: keep a tiny "hello task" (for example, edit one markdown line in a branch) to validate end-to-end OpenClaw -> Codex -> repo workflow before larger automations.
 
 ## Jekyll + GitHub Actions publishing loop
 
