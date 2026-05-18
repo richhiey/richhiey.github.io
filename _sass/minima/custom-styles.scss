@@ -89,6 +89,33 @@ a {
   gap: 0.5rem;
 }
 
+.header-social-links .social-media-list {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-social-links .social-media-list li {
+  margin: 0;
+}
+
+.header-social-links .social-media-list a {
+  align-items: center;
+  border: 1px solid rgba(92, 125, 180, 0.56);
+  border-radius: 999px;
+  background: rgba(20, 28, 40, 0.82);
+  display: inline-flex;
+  justify-content: center;
+  padding: 0.8rem;
+}
+
+.header-social-links .svg-icon {
+  height: 1.15rem;
+  width: 1.15rem;
+}
+
 .site-nav .page-link {
   color: rgba(226, 232, 240, 0.86);
   font-size: 0.98rem;
@@ -104,14 +131,6 @@ a {
 .site-nav .page-link:focus-visible {
   background: rgba(255, 255, 255, 0.04);
   color: #ffffff;
-}
-
-.site-nav .page-link--pill {
-  border: 1px solid rgba(92, 125, 180, 0.56);
-  background: rgba(20, 28, 40, 0.82);
-  color: #dbe4ef;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .home-shell {
@@ -497,8 +516,8 @@ a {
     text-align: center;
   }
 
-  .site-nav .page-link--pill {
-    width: 100%;
+  .header-social-links .social-media-list {
+    justify-content: center;
   }
 
   .about-home {
