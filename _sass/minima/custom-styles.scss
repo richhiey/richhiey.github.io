@@ -331,6 +331,35 @@ a {
   font-weight: 700;
 }
 
+.publication-card {
+  background: linear-gradient(180deg, rgba(18, 22, 31, 0.86), rgba(12, 16, 23, 0.86));
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.badge-row--compact {
+  margin-top: 1rem;
+}
+
+.badge {
+  align-items: center;
+  background: rgba(154, 183, 255, 0.12);
+  border: 1px solid rgba(154, 183, 255, 0.2);
+  border-radius: 999px;
+  color: #dde4f2;
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.45rem 0.7rem;
+  text-transform: uppercase;
+}
+
 .section-list {
   display: grid;
   gap: 1rem;
