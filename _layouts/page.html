@@ -1,14 +1,14 @@
 ---
 layout: base
 ---
-<article class="post">
+<section class="page-layout">
+  {%- if page.show_title != false and page.title -%}
+    <header class="page-layout__header">
+      <h1 class="page-title">{{ page.title | escape }}</h1>
+    </header>
+  {%- endif -%}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
-
-  <div class="post-content">
+  <div class="page-layout__content">
     {{ content }}
   </div>
-
-</article>
+</section>
