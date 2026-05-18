@@ -1,5 +1,5 @@
 ---
-layout: document
+layout: page
 title: Towards Compressed Transformers for Piano Transcription
 eyebrow: DAGA 2026
 subtitle: Contribution accepted to the Music Information Retrieval (MIR) 1 session.
