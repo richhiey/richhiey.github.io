@@ -11,12 +11,27 @@ layout: base
     {%- if page.subtitle -%}
       <p class="document-subtitle">{{ page.subtitle | escape }}</p>
     {%- endif -%}
+    <div class="badge-row badge-row--compact">
+      {%- if page.acceptance -%}<span class="badge">{{ page.acceptance | escape }}</span>{%- endif -%}
+      {%- if page.presentation_type -%}<span class="badge">{{ page.presentation_type | escape }}</span>{%- endif -%}
+      {%- if page.session -%}<span class="badge">{{ page.session | escape }}</span>{%- endif -%}
+      {%- if page.abstract_id -%}<span class="badge">{{ page.abstract_id | escape }}</span>{%- endif -%}
+    </div>
     <div class="document-meta">
       {%- if page.date -%}
         <span>{{ page.date | date: "%B %-d, %Y" }}</span>
       {%- endif -%}
       {%- if page.role -%}
         <span>{{ page.role | escape }}</span>
+      {%- endif -%}
+      {%- if page.session -%}
+        <span>{{ page.session | escape }}</span>
+      {%- endif -%}
+      {%- if page.abstract_id -%}
+        <span>{{ page.abstract_id | escape }}</span>
+      {%- endif -%}
+      {%- if page.doi -%}
+        <a href="{{ page.doi }}">DOI</a>
       {%- endif -%}
       {%- if page.link -%}
         <a href="{{ page.link }}">{{ page.link_label | default: page.link | escape }}</a>

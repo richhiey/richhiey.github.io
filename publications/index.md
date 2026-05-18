@@ -7,20 +7,26 @@ show_title: false
 
 <section class="page-intro">
   <p class="eyebrow">Publications</p>
-  <h1 class="page-title">Long-form writing and detailed technical notes.</h1>
-  <p class="page-lead">Entries here keep the full context intact, including the ERC-8004 write-up.</p>
+  <h1 class="page-title">Selected conference writing and technical notes.</h1>
+  <p class="page-lead">Highlighted work from DAGA 2026, with full acceptance details and the abstract preserved below.</p>
 </section>
 
 <div class="section-list">
   {%- assign publications = site.publications | sort: "date" | reverse -%}
   {%- for publication in publications -%}
-    <article class="list-card">
-      <div class="list-card__meta">
-        <span>Publication</span>
+    <article class="list-card publication-card">
+      <div class="list-card__meta publication-card__meta">
+        <span>{{ publication.eyebrow | default: "Publication" }}</span>
         <span>{{ publication.date | date: "%b %-d, %Y" }}</span>
       </div>
       <h2><a href="{{ publication.url | relative_url }}">{{ publication.title | escape }}</a></h2>
       <p>{{ publication.summary | default: publication.excerpt | strip_html | strip_newlines }}</p>
+      <div class="badge-row">
+        {%- if publication.acceptance -%}<span class="badge">{{ publication.acceptance | escape }}</span>{%- endif -%}
+        {%- if publication.presentation_type -%}<span class="badge">{{ publication.presentation_type | escape }}</span>{%- endif -%}
+        {%- if publication.session -%}<span class="badge">{{ publication.session | escape }}</span>{%- endif -%}
+        {%- if publication.abstract_id -%}<span class="badge">{{ publication.abstract_id | escape }}</span>{%- endif -%}
+      </div>
     </article>
   {%- endfor -%}
 </div>
