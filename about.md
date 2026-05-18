@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-permalink: /
+permalink: /about/
 ---
 
 <img src="/assets/images/home/home_image.jpg" alt="Richhiey Thomas" width="100" height="100" style="border-radius:50px">

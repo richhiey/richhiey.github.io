@@ -1,2 +1,260 @@
-// Placeholder to allow defining custom styles that override everything else.
-// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+body {
+  background:
+    radial-gradient(circle at top left, rgba(107, 114, 128, 0.14), transparent 28%),
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent 24%),
+    linear-gradient(180deg, #0b0f14 0%, #11161d 36%, #0b0f14 100%);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(18px);
+  background: rgba(11, 15, 20, 0.8);
+  border-top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-nav .page-link {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: #dbe5f1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.88rem;
+  margin-left: 0;
+  padding: 0.55rem 0.9rem;
+  transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease;
+}
+
+.site-nav .page-link:hover,
+.site-nav .page-link:focus-visible {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.site-nav .page-link--accent {
+  border-color: rgba(96, 165, 250, 0.28);
+  background: rgba(96, 165, 250, 0.08);
+}
+
+.home-shell {
+  padding-top: 1.5rem;
+}
+
+.hero {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.9fr);
+  align-items: start;
+  padding: 2rem 0 3rem;
+}
+
+.hero-title {
+  font-size: clamp(2.8rem, 6vw, 5.4rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  margin-bottom: 1rem;
+  max-width: 11ch;
+}
+
+.hero-text {
+  color: rgba(219, 229, 241, 0.82);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  max-width: 62ch;
+}
+
+.eyebrow,
+.card-label,
+.document-eyebrow,
+.latest-meta {
+  color: #8fb4ff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.button {
+  border-radius: 999px;
+  display: inline-flex;
+  font-weight: 700;
+  padding: 0.85rem 1.2rem;
+  transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  background: linear-gradient(135deg, #7aa7ff 0%, #4f8dfd 100%);
+  color: #08111d;
+}
+
+.button-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #e8f1ff;
+}
+
+.hero-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-card,
+.section-card,
+.latest-item,
+.document {
+  background: rgba(17, 22, 29, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.22);
+}
+
+.hero-card {
+  padding: 1.15rem 1.2rem;
+}
+
+.hero-card h2,
+.section-card h3,
+.section-card h2 {
+  margin-bottom: 0.35rem;
+}
+
+.hero-card p,
+.section-card p,
+.document-content,
+.document-subtitle {
+  color: rgba(219, 229, 241, 0.8);
+}
+
+.section-block {
+  padding: 1rem 0 2.25rem;
+}
+
+.section-heading {
+  margin-bottom: 1rem;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  letter-spacing: -0.03em;
+  margin-bottom: 0;
+}
+
+.section-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.section-card {
+  padding: 1.25rem 1.3rem;
+}
+
+.section-card a {
+  color: #9ec0ff;
+  font-weight: 700;
+}
+
+.section-card--wide {
+  margin-bottom: 1rem;
+}
+
+.section-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.latest-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.latest-item {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem 1.1rem;
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.latest-item:hover,
+.latest-item:focus-visible {
+  border-color: rgba(122, 167, 255, 0.36);
+  transform: translateY(-1px);
+}
+
+.latest-title {
+  color: #f4f8ff;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.latest-arrow {
+  color: #9ec0ff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.document {
+  padding: clamp(1.3rem, 3vw, 2.25rem);
+}
+
+.document-title {
+  font-size: clamp(2.2rem, 4.5vw, 4rem);
+  letter-spacing: -0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.document-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.25rem;
+  margin-top: 1rem;
+  color: rgba(219, 229, 241, 0.64);
+}
+
+.document-content {
+  line-height: 1.8;
+  margin-top: 2rem;
+}
+
+.document-content h2 {
+  margin-top: 2rem;
+}
+
+.document-content h3 {
+  margin-top: 1.5rem;
+}
+
+.document-content code,
+.document-content pre {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 900px) {
+  .hero,
+  .section-grid {
+    grid-template-columns: 1fr;
+  }
+}

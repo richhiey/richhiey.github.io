@@ -1,0 +1,30 @@
+---
+layout: base
+---
+
+<article class="document">
+  <header class="document-header">
+    {%- if page.eyebrow -%}
+      <p class="document-eyebrow">{{ page.eyebrow | escape }}</p>
+    {%- endif -%}
+    <h1 class="document-title">{{ page.title | escape }}</h1>
+    {%- if page.subtitle -%}
+      <p class="document-subtitle">{{ page.subtitle | escape }}</p>
+    {%- endif -%}
+    <div class="document-meta">
+      {%- if page.date -%}
+        <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+      {%- endif -%}
+      {%- if page.role -%}
+        <span>{{ page.role | escape }}</span>
+      {%- endif -%}
+      {%- if page.link -%}
+        <a href="{{ page.link }}">{{ page.link_label | default: page.link | escape }}</a>
+      {%- endif -%}
+    </div>
+  </header>
+
+  <div class="document-content">
+    {{ content }}
+  </div>
+</article>
