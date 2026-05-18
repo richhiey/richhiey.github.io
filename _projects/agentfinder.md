@@ -1,5 +1,5 @@
 ---
-layout: document
+layout: page
 title: AgentFinder
 eyebrow: Featured project
 subtitle: Registry-first A2A platform for discovering, validating, submitting, and integrating live agents.
