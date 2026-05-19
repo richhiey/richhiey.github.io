@@ -23,7 +23,8 @@ Thomas Prätzlich, Richhiey Thomas, Sebastian Stober
 
 ## Abstract
 
-This paper looks at how to make transformer-based piano transcription more practical for constrained devices such as mobile phones. The core idea is to reduce the model's memory and compute demands without losing too much transcription quality. The authors explore attention pruning strategies, compare pruning individual versus joint attention components, and then fine-tune the compressed models using knowledge distillation to recover performance. They also test dynamic weight quantization and measure its effect on model size and transcription quality. Overall, the work shows that the transformer model can be compressed substantially, roughly to a quarter of the original size, while keeping transcription performance close to the baseline.
+Recently, the sequence-to-sequence transformer model for piano transcription (TPT) has shown state-of-the-art performance. However, its memory and compute requirements still limit its use in constrained environments such as mobile phones. To address these limitations, we explore model compression techniques for reducing memory and compute demands. First, we apply importance-based attention pruning to reduce the number of model weights. We compare individually and jointly pruning the model's attention components, and find the encoder's self-attention component to be most sensitive to pruning. Next, we fine-tune the pruned models with a knowledge distillation loss to recover performance lost during pruning. Finally, we apply dynamic weight quantization and evaluate its impact on model storage size and transcription metrics. With these compression techniques, the TPT model can be reduced by about 4x compared to the baseline without a drastic reduction in transcription performance.
+
 
 ## Acceptance details
 
