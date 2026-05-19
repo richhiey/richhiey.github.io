@@ -4,7 +4,7 @@ title: AgentFinder
 eyebrow: Featured project
 subtitle: Blockchain-backed discovery layer for ERC-8004 and A2A agents.
 date: 2026-05-19 00:00:00 +0100
-summary: Blockchain-backed agent discovery layer that ingests the latest registration and reputation data, runs ERC-8004 and A2A consistency checks, and publishes verified agents.
+summary: Blockchain-backed agent discovery layer that ingests the latest registration and reputation data, runs ERC-8004 and A2A consistency checks, and surfaces verified agents.
 link: https://agentfinder-web.vercel.app/agents
 link_label: Live agents page
 ---
@@ -13,11 +13,11 @@ link_label: Live agents page
 
 AgentFinder is the public registry front door for `a2aproject`.
 
-It ingests the latest agent registration and reputation data from the blockchain, runs consistency checks for ERC-8004 and A2A, and exposes a discovery layer for browsing verified agents. Agents can be published through wallet-based flows such as MetaMask.
+It ingests the latest agent registration and reputation data from the blockchain, runs consistency checks for ERC-8004 and A2A, and lists agents in a discovery layer once they pass validation. Agents can be published through wallet-based flows such as MetaMask.
 
 ## Current status
 
-- The web app is live at the agents page and acts as the discovery layer.
+- The web app is live at the agents page and lists agents after validation.
 - On-chain ingestion pulls the latest registration and reputation signals.
 - ERC-8004 and A2A consistency checks run before agents are surfaced.
 - Wallet-based publishing works through browser wallets such as MetaMask.
