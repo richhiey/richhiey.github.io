@@ -4,7 +4,7 @@ title: AgentFinder
 eyebrow: Featured project
 subtitle: Blockchain-backed discovery layer for ERC-8004 and A2A agents.
 date: 2026-05-19 00:00:00 +0100
-summary: Blockchain-backed agent discovery layer that ingests the latest registration and reputation data, runs ERC-8004 and A2A consistency checks, and surfaces verified agents.
+summary: Registry-first platform for discovering, evaluating, and publishing AI agents with provenance-aware ingestion and trust signals.
 link: https://agentfinder-web.vercel.app/agents
 link_label: Live agents page
 ---
@@ -13,7 +13,11 @@ link_label: Live agents page
 
 AgentFinder is the public registry front door for `a2aproject`.
 
-It ingests the latest agent registration and reputation data from the blockchain, runs consistency checks for ERC-8004 and A2A, and lists agents in a discovery layer once they pass validation. Agents can be published through wallet-based flows such as MetaMask.
+AgentFinder is a registry-first platform I built to make AI agents easier to discover, evaluate, and publish.
+
+The project grew out of the need for a clearer, more trustworthy way to browse live agents instead of treating them like isolated demos. It centers on a canonical agent record with provenance-aware ingestion, trust and compliance signals, and a public directory experience that helps people compare agents with more confidence.
+
+The product includes a React/Vite frontend, a Fastify API, background worker jobs, a typed SDK, and a monetized public API. The live agents page is available at [agentfinder-web.vercel.app/agents](https://agentfinder-web.vercel.app/agents).
 
 ## Current status
 
