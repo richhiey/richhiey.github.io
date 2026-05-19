@@ -5,12 +5,6 @@ permalink: /publications/
 show_title: false
 ---
 
-<section class="page-intro">
-  <p class="eyebrow">Publications</p>
-  <h1 class="page-title">Selected conference writing and technical notes.</h1>
-  <p class="page-lead">Highlighted work from DAGA 2026, with full acceptance details and the abstract preserved below.</p>
-</section>
-
 <div class="section-list">
   {%- assign publications = site.publications | sort: "date" | reverse -%}
   {%- for publication in publications -%}

@@ -5,12 +5,6 @@ permalink: /projects/
 show_title: false
 ---
 
-<section class="page-intro">
-  <p class="eyebrow">Projects</p>
-  <h1 class="page-title">Selected builds and experiments.</h1>
-  <p class="page-lead">A quieter index of the work I’m actively shaping, starting with AgentFinder.</p>
-</section>
-
 <div class="section-list">
   {%- assign projects = site.projects | sort: "date" | reverse -%}
   {%- for project in projects -%}
