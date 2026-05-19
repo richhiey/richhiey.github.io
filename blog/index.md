@@ -5,12 +5,6 @@ permalink: /blog/
 show_title: false
 ---
 
-<section class="page-intro">
-  <p class="eyebrow">Blog</p>
-  <h1 class="page-title">Notes, experiments, and technical essays.</h1>
-  <p class="page-lead">A chronological archive of posts on AI systems, music technology, and product work.</p>
-</section>
-
 <div class="section-list">
   {%- assign posts = site.posts -%}
   {%- for post in posts -%}
