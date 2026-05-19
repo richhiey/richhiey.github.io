@@ -1,2 +1,47 @@
-// Placeholder to allow defining custom styles that override everything else.
-// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+// Subtle portfolio-specific additions on top of Minima.
+
+.site-nav .page-link {
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.site-nav .page-link.is-active {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 999px;
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.list-card,
+.section-card {
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease;
+}
+
+.list-card:hover,
+.list-card:focus-within,
+.section-card:hover,
+.section-card:focus-within {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.list-card h2 a,
+.section-card a {
+  transition: color 160ms ease;
+}
+
+.list-card:hover h2 a,
+.list-card:focus-within h2 a,
+.section-card:hover a,
+.section-card:focus-within a {
+  color: #ffffff;
+}
