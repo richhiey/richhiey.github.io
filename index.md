@@ -8,8 +8,6 @@ permalink: /
 
 Hey there! Richhiey here.
 
-I build end-to-end machine learning systems, with a focus on audio ML (music transcription, event detection, and ASR). I work across data pipelines, real-time modeling, and cloud deployment using Python, TypeScript, and C++.
+I build ML systems that bring together data strategy, model development, cloud infrastructure, and deployment. My work focuses on taking AI from experimentation to reliable product impact, with recent exploration into agentic workflows for more adaptive and capable systems.
 
-My stack includes AWS (SageMaker, Glue, S3, ECS), Docker, FastAPI/Flask, PySpark, and Airflow for scalable and production-ready ML workflows.
-
-If you're into audio AI, data engineering, or practical ML systems, let's connect.
+A significant part of my experience is in audio AI, spanning music transcription, onset detection, note-event modeling, and low-latency on-device inference for mobile devices. I’m especially interested in technology that makes music tools more intelligent and accessible.
