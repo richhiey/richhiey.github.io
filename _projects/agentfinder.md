@@ -11,13 +11,12 @@ link_label: Live agents page
 
 ## Overview
 
-AgentFinder is the public registry front door for `a2aproject`.
+**WebApp:** [agentfinder-web.vercel.app/agents](https://agentfinder-web.vercel.app/agents).
 
-AgentFinder is a registry-first platform I built to make AI agents easier to discover, evaluate, and publish.
+AgentFinder is a registry-first platform I built to make AI agents easier to discover, evaluate, and publish. The product includes a React/Vite frontend, a Fastify API, background worker jobs, a typed SDK, and a monetized public API. 
 
 The project grew out of the need for a clearer, more trustworthy way to browse live agents instead of treating them like isolated demos. It centers on a canonical agent record with provenance-aware ingestion, trust and compliance signals, and a public directory experience that helps people compare agents with more confidence.
 
-The product includes a React/Vite frontend, a Fastify API, background worker jobs, a typed SDK, and a monetized public API. The live agents page is available at [agentfinder-web.vercel.app/agents](https://agentfinder-web.vercel.app/agents).
 
 ## Current status
 
@@ -34,7 +33,3 @@ The product includes a React/Vite frontend, a Fastify API, background worker job
 - `apps/worker`: polling worker with composable ingestion, freshness, and indexing job seams
 - `packages/domain`: shared A2A schemas, canonical agent model, registry primitives, discovery models, trust helpers, and ingestion boundaries
 - `packages/sdk`: typed client for registry, discovery, auth, and enterprise workflows
-
-## Notes
-
-- This page should stay aligned with the latest registry status as the project changes.
