@@ -2,9 +2,9 @@
 layout: page
 title: AgentFinder
 eyebrow: Featured project
-subtitle: Registry-first A2A platform for discovering, validating, submitting, and integrating live agents.
+subtitle: Blockchain-backed discovery layer for ERC-8004 and A2A agents.
 date: 2026-05-19 00:00:00 +0100
-summary: Registry-first A2A platform with public catalog browsing, discovery search, trust signals, submission publishing, and a monetized public API.
+summary: Blockchain-backed agent discovery layer that ingests the latest registration and reputation data, runs ERC-8004 and A2A consistency checks, and publishes verified agents.
 link: https://agentfinder-web.vercel.app/agents
 link_label: Live agents page
 ---
@@ -13,16 +13,15 @@ link_label: Live agents page
 
 AgentFinder is the public registry front door for `a2aproject`.
 
-It currently centers the public registry, discovery, trust and compliance signals, automatic submission publishing, a monetized public API, and a lightweight enterprise inquiry path for private registry hosting.
+It ingests the latest agent registration and reputation data from the blockchain, runs consistency checks for ERC-8004 and A2A, and exposes a discovery layer for browsing verified agents. Agents can be published through wallet-based flows such as MetaMask.
 
 ## Current status
 
-- The web app, API, worker, shared domain package, and SDK are all part of the platform shape.
-- The public registry/catalog is live at the agents page.
-- Public agent submissions auto-validate and auto-publish when they pass.
+- The web app is live at the agents page and acts as the discovery layer.
+- On-chain ingestion pulls the latest registration and reputation signals.
+- ERC-8004 and A2A consistency checks run before agents are surfaced.
+- Wallet-based publishing works through browser wallets such as MetaMask.
 - Seeded demo data supports registry browsing and walkthroughs.
-- The public API is monetized with x402 settlement.
-- Enterprise and private registry hosting flow through a separate inquiry path.
 
 ## Platform shape
 
