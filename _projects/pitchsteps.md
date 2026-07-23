@@ -9,6 +9,8 @@ link: https://pitchsteps.vercel.app/
 link_label: Try Pitchsteps
 ---
 
+[Try the live app](https://pitchsteps.vercel.app/) · [View the source on GitHub](https://github.com/richhiey/pitchsteps)
+
 ## Overview
 
 Pitchsteps is a browser-based vocal warm-up app built to help singers start with a steadier, more confident voice. The experience guides a user through short ascending and descending exercises, plays reference tones, listens through the microphone, and shows how closely each note matches the target.
@@ -28,8 +30,3 @@ The app is built with React, TypeScript, Vite, Web Audio APIs, and `onnxruntime-
 ## Why it matters
 
 Pitch practice can be hard to evaluate without a teacher or recording setup. Pitchsteps makes the feedback loop immediate: hear the target, sing it, see the pitch trail, and get a concrete result to work from. The goal is not to replace a vocal coach, but to make consistent, low-friction practice easier to begin.
-
-## Links
-
-- [Live app](https://pitchsteps.vercel.app/)
-- [Source code on GitHub](https://github.com/richhiey/pitchsteps)
