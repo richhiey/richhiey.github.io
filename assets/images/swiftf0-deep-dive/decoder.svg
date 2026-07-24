@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="500" viewBox="0 0 1120 500" role="img" aria-labelledby="title desc">
+  <title id="title">SwiftF0 local expected-value decoder</title><desc id="desc">A pitch probability distribution is decoded using a local window around the maximum bin, producing frequency and confidence.</desc>
+  <style>.bg{fill:#10161d}.title{fill:#f3f6f8;font:700 25px system-ui,sans-serif}.head{fill:#f3f6f8;font:700 16px system-ui,sans-serif}.body{fill:#91a0ad;font:13px system-ui,sans-serif}.axis{stroke:#738493;stroke-width:2}.bar{fill:#314252}.local{fill:#48c6b7}.peak{fill:#7ee1d5}.window{fill:#48c6b7;opacity:.08;stroke:#48c6b7;stroke-width:2}</style>
+  <rect class="bg" width="1120" height="500" rx="18"/><text class="title" x="55" y="52">Decode one mode; do not average unrelated hypotheses</text>
+  <rect class="window" x="455" y="95" width="285" height="285" rx="10"/><text class="body" x="478" y="120">local window: b* ± 9</text>
+  <line class="axis" x1="80" y1="380" x2="1040" y2="380"/>
+  <g>
+    <rect class="bar" x="100" y="359" width="18" height="21"/><rect class="bar" x="130" y="352" width="18" height="28"/><rect class="bar" x="160" y="362" width="18" height="18"/>
+    <rect class="bar" x="250" y="345" width="18" height="35"/><rect class="bar" x="280" y="325" width="18" height="55"/><rect class="bar" x="310" y="347" width="18" height="33"/>
+    <rect class="local" x="470" y="342" width="18" height="38"/><rect class="local" x="500" y="305" width="18" height="75"/><rect class="local" x="530" y="255" width="18" height="125"/><rect class="local" x="560" y="180" width="18" height="200"/><rect class="peak" x="590" y="135" width="18" height="245"/><rect class="local" x="620" y="165" width="18" height="215"/><rect class="local" x="650" y="235" width="18" height="145"/><rect class="local" x="680" y="300" width="18" height="80"/><rect class="local" x="710" y="340" width="18" height="40"/>
+    <rect class="bar" x="835" y="315" width="18" height="65"/><rect class="bar" x="865" y="275" width="18" height="105"/><rect class="bar" x="895" y="330" width="18" height="50"/>
+  </g>
+  <text class="head" x="566" y="410">b*</text><text class="body" x="80" y="430">lower pitch bins</text><text class="body" x="930" y="430">higher pitch bins</text>
+  <path stroke="#48c6b7" stroke-width="2" d="M600 130V84h250"/><text class="head" x="860" y="89">pitch_hz</text><text class="body" x="860" y="112">weighted local frequency</text>
+  <path stroke="#48c6b7" stroke-width="2" d="M740 235h180v30"/><text class="head" x="850" y="291">confidence</text><text class="body" x="780" y="315">total probability mass in window</text>
+  <text class="body" x="55" y="468">A distant secondary peak lowers confidence but does not pull the continuous estimate between two modes.</text>
+</svg>

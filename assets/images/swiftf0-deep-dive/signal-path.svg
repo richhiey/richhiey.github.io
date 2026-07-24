@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="470" viewBox="0 0 1120 470" role="img" aria-labelledby="title desc">
+  <title id="title">SwiftF0 complete signal path</title>
+  <desc id="desc">Waveform audio passes through resampling, STFT, frequency selection, convolution, pitch projection, and decoding to pitch and confidence.</desc>
+  <style>.bg{fill:#10161d}.box{fill:#18222d;stroke:#314252;stroke-width:2}.accent{stroke:#48c6b7}.title{fill:#f3f6f8;font:700 25px system-ui,sans-serif}.head{fill:#f3f6f8;font:700 16px system-ui,sans-serif}.body{fill:#91a0ad;font:12px system-ui,sans-serif}.arrow{stroke:#738493;stroke-width:2;fill:none}</style>
+  <rect class="bg" width="1120" height="470" rx="18"/><text class="title" x="50" y="52">From samples to two aligned output sequences</text>
+  <g transform="translate(42 115)">
+    <rect class="box" width="130" height="105" rx="12"/><text class="head" x="18" y="38">Waveform</text><text class="body" x="18" y="64">mono float32</text><text class="body" x="18" y="82">variable length</text>
+    <path class="arrow" d="M130 52h30"/><path fill="#738493" d="m153 46 12 6-12 6z"/>
+    <rect class="box" x="165" width="130" height="105" rx="12"/><text class="head" x="183" y="38">16 kHz</text><text class="body" x="183" y="64">mono conversion</text><text class="body" x="183" y="82">resampling</text>
+    <path class="arrow" d="M295 52h30"/><path fill="#738493" d="m318 46 12 6-12 6z"/>
+    <rect class="box accent" x="330" width="140" height="105" rx="12"/><text class="head" x="348" y="32">STFT</text><text class="body" x="348" y="57">1024 window</text><text class="body" x="348" y="75">256 hop</text><text class="body" x="348" y="93">log magnitude</text>
+    <path class="arrow" d="M470 52h30"/><path fill="#738493" d="m493 46 12 6-12 6z"/>
+    <rect class="box accent" x="505" width="140" height="105" rx="12"/><text class="head" x="523" y="32">Band crop</text><text class="body" x="523" y="57">bins 3–134</text><text class="body" x="523" y="75">132 positions</text><text class="body" x="523" y="93">46.9–2093.8 Hz</text>
+    <path class="arrow" d="M645 52h30"/><path fill="#738493" d="m668 46 12 6-12 6z"/>
+    <rect class="box accent" x="680" width="140" height="105" rx="12"/><text class="head" x="698" y="32">2-D CNN</text><text class="body" x="698" y="57">five 5×5 layers</text><text class="body" x="698" y="75">95,842 params</text><text class="body" x="698" y="93">time × 132</text>
+    <path class="arrow" d="M820 52h30"/><path fill="#738493" d="m843 46 12 6-12 6z"/>
+    <rect class="box accent" x="855" width="140" height="105" rx="12"/><text class="head" x="873" y="32">Projection</text><text class="body" x="873" y="57">200 log bins</text><text class="body" x="873" y="75">softmax</text><text class="body" x="873" y="93">local decoder</text>
+  </g>
+  <path class="arrow" d="M967 220v70h-177"/><path fill="#738493" d="m797 284-12 6 12 6z"/>
+  <rect class="box" x="565" y="290" width="220" height="105" rx="12"/><text class="head" x="590" y="325">pitch_hz</text><text class="body" x="590" y="351">continuous F0 per frame</text><text class="body" x="590" y="372">local expected value</text>
+  <rect class="box" x="815" y="290" width="220" height="105" rx="12"/><text class="head" x="840" y="325">confidence</text><text class="body" x="840" y="351">local probability mass</text><text class="body" x="840" y="372">not calibrated correctness</text>
+  <text class="body" x="50" y="430">Caller-side policy adds timestamps, range filtering, confidence thresholding, and the final voiced mask.</text>
+</svg>
