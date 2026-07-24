@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="480" viewBox="0 0 1120 480" role="img" aria-labelledby="title desc">
+  <title id="title">SwiftF0 spectral band selection</title><desc id="desc">The full positive STFT spectrum of 513 bins is cropped to 132 bins from 46.875 to 2093.75 hertz.</desc>
+  <style>.bg{fill:#10161d}.title{fill:#f3f6f8;font:700 25px system-ui,sans-serif}.head{fill:#f3f6f8;font:700 16px system-ui,sans-serif}.body{fill:#91a0ad;font:13px system-ui,sans-serif}.axis{stroke:#738493;stroke-width:2}.drop{fill:#28333e}.keep{fill:#48c6b7}.grid{stroke:#314252;stroke-width:1}</style>
+  <rect class="bg" width="1120" height="480" rx="18"/><text class="title" x="55" y="54">Most STFT bins never reach the neural network</text><text class="body" x="55" y="80">1,024-point real STFT at 16 kHz → 513 non-negative-frequency bins</text>
+  <line class="axis" x1="80" y1="335" x2="1040" y2="335"/>
+  <rect class="drop" x="80" y="205" width="6" height="130"/><rect class="keep" x="86" y="125" width="253" height="210"/><rect class="drop" x="339" y="205" width="701" height="130"/>
+  <text class="head" x="145" y="165">retained: 132 bins</text><text class="body" x="140" y="190">model input width</text>
+  <text class="head" x="610" y="245">discarded before CNN</text><text class="body" x="638" y="270">upper 74% of bins</text>
+  <g class="body" text-anchor="middle"><text x="80" y="365">0 Hz</text><text x="86" y="398">bin 3</text><text x="86" y="420">46.875 Hz</text><text x="339" y="398">bin 134</text><text x="339" y="420">2,093.75 Hz</text><text x="1040" y="365">8 kHz</text></g>
+  <line class="grid" x1="86" y1="115" x2="86" y2="350"/><line class="grid" x1="339" y1="115" x2="339" y2="350"/>
+  <text class="body" x="55" y="454">Every horizontal step is 15.625 Hz. Log compression changes magnitude values, not the linear spacing of the STFT axis.</text>
+</svg>
