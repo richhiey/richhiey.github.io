@@ -1,4 +1,4 @@
-// Portfolio typography increased by 6pt (8 CSS pixels) for readability.
+// Shared type scale and spacing for the minimal portfolio.
 :root {
   color-scheme: dark;
   --paper: #101414;
@@ -6,6 +6,15 @@
   --muted: #a4afa9;
   --accent: #c1ed9a;
   --line: #303a35;
+  --type-nav: 17px;
+  --type-label: 13px;
+  --type-hero: 23px;
+  --type-project: 16px;
+  --type-description: 15px;
+  --label-tracking: .045em;
+  --space-identity: 20px;
+  --space-section: 44px;
+  --space-row: 18px;
 }
 body { background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 24px; line-height: 1.65; }
 * { box-sizing: border-box; }
@@ -20,33 +29,30 @@ h1, h2, h3 { font-weight: 500; letter-spacing: -.035em; line-height: 1.2; }
 .site-header { border: 0; line-height: 1.5; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 90px; gap: 28px; }
 .header-inner::after { display: none; }
-.site-title { float: none; padding: 0; display: inline-flex; align-items: center; gap: 12px; font-size: 24px; font-weight: 500; letter-spacing: -.02em; white-space: nowrap; }
-.brand-mark { font-size: 35px; font-weight: 650; letter-spacing: -.08em; }
+.site-title { float: none; padding: 0; display: inline-flex; align-items: center; gap: 12px; font-size: var(--type-nav); font-weight: 500; letter-spacing: -.02em; white-space: nowrap; }
+.brand-mark { font-size: 27px; font-weight: 650; letter-spacing: -.08em; }
 .brand-mark span { color: var(--accent); }
 .site-nav { position: static; float: none; display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 22px; background: none; border: 0; text-align: left; }
-.site-nav .page-link { display: inline-block; margin: 0 !important; padding: 8px 0; color: var(--muted); font-size: 24px; }
+.site-nav .page-link { display: inline-block; margin: 0 !important; padding: 8px 0; color: var(--muted); font-size: var(--type-nav); font-weight: 400; line-height: 1.5; }
 .site-nav .page-link.is-active { color: var(--accent); background: none; box-shadow: none; border-radius: 0; }
 .site-nav .page-link:hover { color: var(--ink); }
-.site-nav .nav-resume { color: var(--ink); }
 .page-content { padding: 54px 0 70px; }
 .portfolio-page .page-content > .wrapper { max-width: 768px; }
-.eyebrow { font: 18px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-.profile-identity { display: flex; align-items: center; gap: 17px; margin-bottom: 26px; }
+.eyebrow { font: 400 var(--type-label)/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: var(--label-tracking); text-transform: uppercase; color: var(--muted); }
+.profile-identity { display: flex; align-items: center; gap: 16px; margin-bottom: var(--space-identity); }
 .profile-identity img { flex-shrink: 0; width: 56px; height: 56px; border-radius: 50%; object-fit: cover; filter: grayscale(100%); }
 .profile-identity .eyebrow { margin: 0; }
-.profile-intro { max-width: 650px; font-size: 24px; color: var(--muted); line-height: 1.85; margin-bottom: 24px; }
-.profile-links { display: flex; gap: 26px; flex-wrap: wrap; font-size: 20px; }
-.profile-links a { padding: 6px 0; }
-.profile-links a:first-child { color: var(--accent); }
-.selected-work { margin-top: 50px; }
+.profile-intro { max-width: 660px; margin: 0; font-size: var(--type-hero); font-weight: 400; color: #bac3bd; line-height: 1.6; letter-spacing: -.012em; }
+.selected-work { margin-top: var(--space-section); }
 .selected-work > h2 { margin-bottom: 16px; }
-.work-row { display: grid; grid-template-columns: 1fr 1.45fr 18px; gap: 20px; align-items: center; padding: 17px 0; border-top: 1px solid var(--line); font-size: 21px; }
-.work-row > span:nth-child(2) { color: var(--muted); font-size: 20px; }
-.work-row > span:last-child { color: var(--muted); }
+.work-row { display: grid; grid-template-columns: 1fr 1.45fr 18px; gap: 20px; align-items: baseline; padding: var(--space-row) 0; border-top: 1px solid var(--line); font-size: var(--type-project); line-height: 1.5; }
+.work-row > span:first-child { font-weight: 500; }
+.work-row > span:nth-child(2) { color: var(--muted); font-size: var(--type-description); font-weight: 400; }
+.work-row > span:last-child { justify-self: end; color: var(--muted); font-size: var(--type-project); }
 .work-row:hover { text-decoration: none; }
 .work-row:hover > span:last-child { color: var(--accent); }
 .site-footer { border-top: 1px solid var(--line); padding: 23px 0; }
-.footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 22px; font-size: 19px; }
+.footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 22px; font-size: var(--type-label); }
 .footer-inner p { margin: 0; color: var(--muted); }
 .footer-inner nav { display: flex; flex-wrap: wrap; gap: 23px; color: var(--muted); }
 .footer-inner nav a { padding: 7px 0; }
@@ -69,16 +75,14 @@ h1, h2, h3 { font-weight: 500; letter-spacing: -.035em; line-height: 1.2; }
 .research-post { max-width: none; }
 .research-post .research-figure { width: 100%; max-width: 988px !important; transform: none; }
 @media (max-width: 700px) {
+  :root { --type-hero: 22px; --space-section: 36px; }
   .wrapper { padding: 0 24px; }
   .header-inner { min-height: 0; padding-top: 20px; padding-bottom: 14px; flex-direction: column; align-items: flex-start; gap: 12px; }
   .site-nav { display: grid; grid-template-columns: 1fr 1fr; width: 100%; gap: 2px 20px; }
-  .site-nav .page-link { font-size: 22px; }
   .page-content { padding: 38px 0 50px; }
-  .profile-intro { font-size: 23px; }
-  .profile-identity .eyebrow { font-size: 17px; }
   .work-row { grid-template-columns: 1fr 18px; gap: 3px 16px; }
-  .work-row > span:nth-child(2) { grid-column: 1; grid-row: 2; font-size: 19px; }
-  .work-row > span:last-child { grid-column: 2; grid-row: 1 / 3; }
+  .work-row > span:nth-child(2) { grid-column: 1; grid-row: 2; }
+  .work-row > span:last-child { grid-column: 2; grid-row: 1 / 3; align-self: center; }
   .footer-inner { align-items: flex-start; flex-direction: column; gap: 8px; }
   .footer-inner nav { gap: 25px; }
   .post-content .list-card h2 { font-size: 31px; }
