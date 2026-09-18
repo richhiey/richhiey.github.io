@@ -43,7 +43,7 @@
 .list-card:focus-within h2 a,
 .section-card:hover a,
 .section-card:focus-within a {
-  color: #ffffff;
+  color: var(--accent);
 }
 
 // Research-post treatment: wider figures, stronger reading rhythm, and

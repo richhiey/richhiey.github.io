@@ -7,7 +7,7 @@ permalink: /
 
 <section class="profile" aria-labelledby="profile-title">
   <div class="profile-identity"><img src="{{ '/assets/images/home/home_image.jpg' | relative_url }}" alt="Richhiey Thomas" width="64" height="64"><h1 class="eyebrow" id="profile-title">Richhiey Thomas / AI Engineer</h1></div>
-  <p class="profile-intro">I build AI systems, with a focus on audio ML, real-time inference, and agents. My work spans the full path from training data to production.</p>
+  <p class="profile-intro">I build and deploy AI systems, with a focus on audio ML, real-time inference, and agents.</p>
 </section>
 
 <section class="selected-work" aria-labelledby="work-title">
