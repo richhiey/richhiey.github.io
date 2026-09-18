@@ -8,7 +8,7 @@
   --line: #303a35;
   --type-nav: 17px;
   --type-label: 13px;
-  --type-hero: 18px;
+  --type-hero: 21px;
   --type-project: 16px;
   --type-description: 15px;
   --label-tracking: .045em;
@@ -79,7 +79,7 @@ h1, h2, h3 { font-weight: 500; letter-spacing: -.035em; line-height: 1.2; }
 .research-post { max-width: none; }
 .research-post .research-figure { width: 100%; max-width: 988px !important; transform: none; }
 @media (max-width: 700px) {
-  :root { --type-hero: 17px; --space-section: 36px; }
+  :root { --type-hero: 20px; --space-section: 36px; }
   .wrapper { padding: 0 24px; }
   .header-inner { min-height: 0; padding-top: 20px; padding-bottom: 14px; flex-direction: column; align-items: flex-start; gap: 12px; }
   .site-nav { display: grid; grid-template-columns: 1fr 1fr; width: 100%; gap: 2px 20px; }
