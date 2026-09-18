@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="wrapper header-inner">
-    <a class="site-title" rel="author" href="{{ '/' | relative_url }}"><span class="brand-mark" aria-hidden="true">rt<span>.</span></span>{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ '/' | relative_url }}"><img class="site-avatar" src="{{ '/assets/images/home/home_image.jpg' | relative_url }}" alt="" width="48" height="48">{{ site.title | escape }}</a>
     <nav class="site-nav" aria-label="Main navigation">
       {% for path in site.header_pages %}
         {% assign nav_page = site.pages | where: 'path', path | first %}
