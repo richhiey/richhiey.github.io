@@ -8,7 +8,7 @@
   --line: #303a35;
   --type-nav: 17px;
   --type-label: 13px;
-  --type-hero: 23px;
+  --type-hero: 18px;
   --type-project: 16px;
   --type-description: 15px;
   --label-tracking: .045em;
@@ -45,6 +45,7 @@ h1, h2, h3 { font-weight: 500; letter-spacing: -.035em; line-height: 1.2; }
 .profile-identity img { flex-shrink: 0; width: 56px; height: 56px; border-radius: 50%; object-fit: cover; filter: grayscale(100%); }
 .profile-identity .eyebrow { margin: 0; color: var(--accent); }
 .profile-intro { max-width: 660px; margin: 0; font-size: var(--type-hero); font-weight: 400; color: #bac3bd; line-height: 1.6; letter-spacing: -.012em; }
+.profile-intro + .profile-intro { margin-top: var(--space-identity); }
 .selected-work { margin-top: var(--space-section); }
 .selected-work > h2 { margin-bottom: 16px; }
 .work-row { display: grid; grid-template-columns: 1fr 1.45fr 18px; gap: 20px; align-items: baseline; padding: var(--space-row) 0; border-top: 1px solid var(--line); font-size: var(--type-project); line-height: 1.5; }
@@ -78,7 +79,7 @@ h1, h2, h3 { font-weight: 500; letter-spacing: -.035em; line-height: 1.2; }
 .research-post { max-width: none; }
 .research-post .research-figure { width: 100%; max-width: 988px !important; transform: none; }
 @media (max-width: 700px) {
-  :root { --type-hero: 22px; --space-section: 36px; }
+  :root { --type-hero: 17px; --space-section: 36px; }
   .wrapper { padding: 0 24px; }
   .header-inner { min-height: 0; padding-top: 20px; padding-bottom: 14px; flex-direction: column; align-items: flex-start; gap: 12px; }
   .site-nav { display: grid; grid-template-columns: 1fr 1fr; width: 100%; gap: 2px 20px; }
