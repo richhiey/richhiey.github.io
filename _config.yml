@@ -37,7 +37,6 @@ collections:
 # If you want to link only specific pages in your header, use this and add the path to the pages
 # in order as they should show up.
 header_pages:
-  - about.md
   - projects/index.md
   - publications/index.md
   - blog/index.md

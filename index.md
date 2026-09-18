@@ -9,7 +9,7 @@ permalink: /
   <div class="profile-identity"><img src="{{ '/assets/images/home/home_image.jpg' | relative_url }}" alt="Richhiey Thomas" width="64" height="64"><p class="eyebrow">Richhiey Thomas / AI Engineer</p></div>
   <h1 id="profile-title">Hi, I’m Richhiey.</h1>
   <p class="profile-intro">I build AI systems, with a focus on audio ML, real-time inference, and agents. My work spans the full path from training data to production.</p>
-  <div class="profile-links"><a href="{{ '/about/' | relative_url }}">About me ↗</a><a href="{{ '/assets/pdfs/CV-richhiey-thomas.pdf' | relative_url }}">Resume ↗</a><a href="mailto:{{ site.author.email }}">Get in touch ↗</a></div>
+  <div class="profile-links"><a href="{{ '/assets/pdfs/CV-richhiey-thomas.pdf' | relative_url }}">Resume ↗</a><a href="mailto:{{ site.author.email }}">Get in touch ↗</a></div>
 </section>
 
 <section class="selected-work" aria-labelledby="work-title">
