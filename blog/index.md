@@ -2,8 +2,9 @@
 layout: page
 title: Blog
 permalink: /blog/
-show_title: false
+show_title: true
 ---
+
 
 <div class="section-list">
   {%- assign posts = site.posts -%}

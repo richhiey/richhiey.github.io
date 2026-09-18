@@ -1,30 +1,7 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Only the main Sass file needs front matter.
 ---
-
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
-
-.profile_pitcture {
-  height: 12em;
-  width: 12em;
-  border-radius: 6em;
-}
-
-.trigger {
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.site-nav input ~ .trigger {
-  padding: 0em 1em 1em 0em
-}
-
-.site-nav {
-  display: inline-flex;
-}
-
-.page-link {
-  padding: 10px;
-}
+  "minima/initialize",
+  "minima/portfolio";

@@ -2,8 +2,9 @@
 layout: page
 title: Projects
 permalink: /projects/
-show_title: false
+show_title: true
 ---
+
 
 <div class="section-list">
   {%- assign projects = site.projects | sort: "date" | reverse -%}

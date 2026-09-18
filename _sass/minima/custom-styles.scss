@@ -98,7 +98,7 @@
   }
 
   .research-figure {
-    width: min(1120px, 96vw);
+    width: unquote("min(1120px, 96vw)");
     max-width: none !important;
     margin-top: 2rem;
     margin-bottom: 2.8rem;

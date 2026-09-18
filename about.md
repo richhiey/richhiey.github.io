@@ -1,15 +1,24 @@
 ---
-layout: page
-title: About Me
+layout: portfolio
+title: About
+description: Richhiey Thomas’s background in AI engineering, audio machine learning, and software development.
 permalink: /about/
 ---
 
-<img src="/assets/images/home/home_image.jpg" alt="Richhiey Thomas" width="100" height="100" style="border-radius:50px">
+<section class="about-profile">
+  <p class="eyebrow">About me</p>
+  <h1>AI engineering.<br>Rooted in audio.</h1>
+  <div class="bio-copy">{% include bio.html %}</div>
+  <a class="text-link" href="{{ '/assets/pdfs/CV-richhiey-thomas.pdf' | relative_url }}">Full experience &amp; resume ↗</a>
+</section>
 
-Hey there! Richhiey here.
-
-I build end-to-end machine learning systems, with a focus on audio ML (music transcription, event detection, and ASR). I work across data pipelines, real-time modeling, and cloud deployment using Python, TypeScript, and C++.
-
-My stack includes AWS (SageMaker, Glue, S3, ECS), Docker, FastAPI/Flask, PySpark, and Airflow for scalable and production-ready ML workflows.
-
-If you're into audio AI, data engineering, or practical ML systems, let's connect.
+<section class="background" aria-labelledby="background-title">
+  <h2 class="eyebrow" id="background-title">Background</h2>
+  <dl>
+    <div><dt>PhonicScore</dt><dd>Data Scientist</dd></div>
+    <div><dt>LearnField</dt><dd>Data Engineer · Data Science Intern</dd></div>
+    <div><dt>OVGU AI Lab</dt><dd>Research Assistant</dd></div>
+    <div><dt>Mirraw</dt><dd>Software Developer</dd></div>
+  </dl>
+  <p class="education-note">M.Sc. Data &amp; Knowledge Engineering, OVGU Magdeburg.<br>AWS ML Specialty &amp; Data Engineer certifications, earned 2024.</p>
+</section>

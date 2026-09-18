@@ -1,13 +1,20 @@
 ---
-layout: page
-title: About Me
+layout: portfolio
+title: AI Engineer
+description: Richhiey Thomas — AI engineer working across audio ML, real-time inference, and agent systems.
 permalink: /
 ---
 
-<img src="/assets/images/home/home_image.jpg" alt="Richhiey Thomas" width="100" height="100" style="border-radius:50px">
+<section class="profile" aria-labelledby="profile-title">
+  <div class="profile-identity"><img src="{{ '/assets/images/home/home_image.jpg' | relative_url }}" alt="Richhiey Thomas" width="64" height="64"><p class="eyebrow">Richhiey Thomas / AI Engineer</p></div>
+  <h1 id="profile-title">Hi, I’m Richhiey.</h1>
+  <p class="profile-intro">I build AI systems, with a focus on audio ML, real-time inference, and agents. My work spans the full path from training data to production.</p>
+  <div class="profile-links"><a href="{{ '/about/' | relative_url }}">About me ↗</a><a href="{{ '/assets/pdfs/CV-richhiey-thomas.pdf' | relative_url }}">Resume ↗</a><a href="mailto:{{ site.author.email }}">Get in touch ↗</a></div>
+</section>
 
-Hey there! Richhiey here.
-
-I build ML systems that bring together data strategy, model development, cloud infrastructure, and deployment. My work focuses on taking AI from experimentation to reliable product impact, with recent exploration into agentic workflows for more adaptive and capable systems.
-
-A significant part of my experience is in audio AI, spanning music transcription, onset detection, note-event modeling, and low-latency on-device inference for mobile devices. I’m especially interested in technology that makes music tools more intelligent and accessible.
+<section class="selected-work" aria-labelledby="work-title">
+  <h2 class="eyebrow" id="work-title">Selected work</h2>
+  <a class="work-row" href="{{ '/projects/pitchsteps/' | relative_url }}"><span>Pitchsteps</span><span>Real-time vocal coaching</span><span aria-hidden="true">↗</span></a>
+  <a class="work-row" href="{{ '/projects/agentfinder/' | relative_url }}"><span>AgentFinder</span><span>AI agent discovery</span><span aria-hidden="true">↗</span></a>
+  <a class="work-row" href="{{ '/publications/daga-2026-piano-transcription/' | relative_url }}"><span>Piano transcription</span><span>Model compression · DAGA 2026</span><span aria-hidden="true">↗</span></a>
+</section>

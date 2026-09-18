@@ -1,11 +1,14 @@
 title: Richhiey Thomas
 author:
-  name: GitHub User
+  name: Richhiey Thomas
   email: richhiey1996@gmail.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
+  AI engineer building practical machine learning systems, from audio models and
+  real-time inference to data pipelines and agent infrastructure.
+url: https://richhiey.github.io
 
 # Build settings
 
@@ -34,6 +37,7 @@ collections:
 # If you want to link only specific pages in your header, use this and add the path to the pages
 # in order as they should show up.
 header_pages:
+  - about.md
   - projects/index.md
   - publications/index.md
   - blog/index.md
