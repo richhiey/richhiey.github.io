@@ -20,11 +20,11 @@ h1, h2, h3 { font-weight: 500; letter-spacing: -.035em; line-height: 1.2; }
 .site-header { border: 0; line-height: 1.5; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 90px; gap: 28px; }
 .header-inner::after { display: none; }
-.site-title { float: none; padding: 0; display: inline-flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 500; letter-spacing: -.02em; white-space: nowrap; }
+.site-title { float: none; padding: 0; display: inline-flex; align-items: center; gap: 12px; font-size: 16px; font-weight: 500; letter-spacing: -.02em; white-space: nowrap; }
 .brand-mark { font-size: 27px; font-weight: 650; letter-spacing: -.08em; }
 .brand-mark span { color: var(--accent); }
 .site-nav { position: static; float: none; display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 22px; background: none; border: 0; text-align: left; }
-.site-nav .page-link { display: inline-block; margin: 0 !important; padding: 8px 0; color: var(--muted); font-size: 12px; }
+.site-nav .page-link { display: inline-block; margin: 0 !important; padding: 8px 0; color: var(--muted); font-size: 16px; }
 .site-nav .page-link.is-active { color: var(--accent); background: none; box-shadow: none; border-radius: 0; }
 .site-nav .page-link:hover { color: var(--ink); }
 .site-nav .nav-resume { color: var(--ink); }
@@ -71,7 +71,7 @@ h1, h2, h3 { font-weight: 500; letter-spacing: -.035em; line-height: 1.2; }
   .wrapper { padding: 0 24px; }
   .header-inner { min-height: 0; padding-top: 20px; padding-bottom: 14px; flex-direction: column; align-items: flex-start; gap: 12px; }
   .site-nav { justify-content: space-between; width: 100%; gap: 10px; }
-  .site-nav .page-link { font-size: 11px; }
+  .site-nav .page-link { font-size: 14px; }
   .page-content { padding: 38px 0 50px; }
   .profile h1 { font-size: 39px; }
   .profile-intro { font-size: 15px; }

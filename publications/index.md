@@ -2,9 +2,8 @@
 layout: page
 title: Publications
 permalink: /publications/
-show_title: true
+show_title: false
 ---
-
 
 <div class="section-list">
   {%- assign publications = site.publications | sort: "date" | reverse -%}
